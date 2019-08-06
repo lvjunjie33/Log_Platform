@@ -1,0 +1,15 @@
+2019-07-09 15:11:28,041 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 7980 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-07-09 15:11:28,049 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-07-09 15:11:28,049 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-09 15:11:39,545 INFO (StartupInfoLogger.java:57)- Started Application in 11.866 seconds (JVM running for 12.523)
+2019-07-09 15:34:42,691 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 10400 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-07-09 15:34:42,691 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-07-09 15:34:42,691 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-09 15:34:49,913 INFO (StartupInfoLogger.java:57)- Started Application in 7.566 seconds (JVM running for 8.129)
+2019-07-09 18:01:08,854 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 1956 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-07-09 18:01:08,854 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-07-09 18:01:08,854 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-09 18:02:18,620 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 12020 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-07-09 18:02:18,620 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-07-09 18:02:18,620 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-09 18:02:32,063 INFO (StartupInfoLogger.java:57)- Started Application in 13.729 seconds (JVM running for 14.275)

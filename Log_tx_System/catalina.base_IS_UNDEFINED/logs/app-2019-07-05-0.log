@@ -1,0 +1,4 @@
+2019-07-05 14:36:25,230 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 7100 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-07-05 14:36:25,237 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-07-05 14:36:25,237 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-05 14:36:37,860 INFO (StartupInfoLogger.java:57)- Started Application in 12.925 seconds (JVM running for 13.642)
