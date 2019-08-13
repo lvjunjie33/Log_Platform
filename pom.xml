@@ -4,4 +4,7 @@
   <artifactId>Log_Platform</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  </project>
+  <modules>
+  	<module>Log_System</module>
+  </modules>
+</project>

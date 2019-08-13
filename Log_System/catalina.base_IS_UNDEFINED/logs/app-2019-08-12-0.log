@@ -1,0 +1,110 @@
+2019-08-12 14:45:58,606 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 13176 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 14:45:58,611 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-08-12 14:45:58,612 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-08-12 14:50:05,633 INFO (StartupInfoLogger.java:48)- Starting Application on N9E7I63DAFWHTOH with PID 9296 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 14:50:05,634 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-08-12 14:50:05,634 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-08-12 15:27:21,806 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12512 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 15:27:21,810 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 15:27:21,811 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 15:55:33,889 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12640 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 15:55:33,893 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 15:55:33,894 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 15:58:53,237 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 7356 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 15:58:53,241 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 15:58:53,241 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 16:03:44,785 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12156 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 16:03:44,789 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 16:03:44,789 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 16:03:51,452 INFO (StartupInfoLogger.java:59)- Started Application in 7.078 seconds (JVM running for 7.775)
+2019-08-12 16:05:54,705 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 14004 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 16:05:54,710 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 16:05:54,711 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 16:06:01,103 INFO (StartupInfoLogger.java:59)- Started Application in 6.817 seconds (JVM running for 7.475)
+2019-08-12 16:23:54,733 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12296 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 16:23:54,739 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 16:23:54,739 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 16:24:03,002 INFO (StartupInfoLogger.java:59)- Started Application in 8.851 seconds (JVM running for 9.718)
+2019-08-12 16:24:55,084 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 14292 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 16:24:55,089 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 16:24:55,090 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 17:45:51,916 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12732 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 17:45:51,920 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 17:45:51,922 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 17:47:02,069 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 2156 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 17:47:02,075 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 17:47:02,075 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 17:48:12,266 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 13540 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 17:48:12,272 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 17:48:12,272 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 17:48:15,554 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-12 17:48:17,007 ERROR (ElasticsearchConfig.java:69)- elasticsearch TransportClient create error!!
+java.lang.IllegalStateException: availableProcessors is already set to [8], rejecting [8]
+	at io.netty.util.NettyRuntime$AvailableProcessorsHolder.setAvailableProcessors(NettyRuntime.java:51)
+	at io.netty.util.NettyRuntime.setAvailableProcessors(NettyRuntime.java:87)
+	at org.elasticsearch.transport.netty4.Netty4Utils.setAvailableProcessors(Netty4Utils.java:83)
+	at org.elasticsearch.transport.netty4.Netty4Transport.<init>(Netty4Transport.java:112)
+	at org.elasticsearch.transport.Netty4Plugin.lambda$getTransports$0(Netty4Plugin.java:86)
+	at org.elasticsearch.transport.Netty4Plugin$$Lambda$1128/38535012.get(Unknown Source)
+	at org.elasticsearch.client.transport.TransportClient.buildTemplate(TransportClient.java:189)
+	at org.elasticsearch.client.transport.TransportClient.<init>(TransportClient.java:283)
+	at org.elasticsearch.transport.client.PreBuiltTransportClient.<init>(PreBuiltTransportClient.java:128)
+	at org.elasticsearch.transport.client.PreBuiltTransportClient.<init>(PreBuiltTransportClient.java:114)
+	at org.elasticsearch.transport.client.PreBuiltTransportClient.<init>(PreBuiltTransportClient.java:104)
+	at snod.com.cn.config.ElasticsearchConfig.transportClient(ElasticsearchConfig.java:65)
+	at snod.com.cn.config.ElasticsearchConfig$$EnhancerBySpringCGLIB$$af2724ec.CGLIB$transportClient$0(<generated>)
+	at snod.com.cn.config.ElasticsearchConfig$$EnhancerBySpringCGLIB$$af2724ec$$FastClassBySpringCGLIB$$63687bd8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at snod.com.cn.config.ElasticsearchConfig$$EnhancerBySpringCGLIB$$af2724ec.transportClient(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$107/2106969963.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$107/2106969963.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at snod.com.cn.Application.main(Application.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2019-08-12 17:48:17,339 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-12 17:49:34,169 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 1284 (D:\workspace_log\Log_Platform\Log_tx_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_tx_System)
+2019-08-12 17:49:34,175 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-12 17:49:34,176 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-12 17:49:36,997 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-12 17:49:41,652 INFO (StartupInfoLogger.java:59)- Started Application in 7.908 seconds (JVM running for 8.569)
