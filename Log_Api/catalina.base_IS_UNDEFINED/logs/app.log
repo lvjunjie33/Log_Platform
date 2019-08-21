@@ -1,0 +1,15 @@
+2019-08-21 11:11:10,844 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 11896 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-08-21 11:11:10,851 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-21 11:11:10,852 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-21 11:11:14,188 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-21 11:11:19,092 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 8.801 seconds (JVM running for 9.5)
+2019-08-21 11:13:29,168 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12244 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-08-21 11:13:29,175 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-21 11:13:29,176 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-21 11:13:32,418 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-21 11:13:37,475 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 8.84 seconds (JVM running for 9.531)
+2019-08-21 11:20:55,343 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12104 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-08-21 11:20:55,349 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-21 11:20:55,349 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-21 11:20:58,398 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-21 11:21:03,083 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 8.296 seconds (JVM running for 8.977)
