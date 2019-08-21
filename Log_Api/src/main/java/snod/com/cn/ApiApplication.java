@@ -14,12 +14,14 @@ import org.springframework.web.filter.CorsFilter;
 
 @ServletComponentScan
 @ComponentScan(basePackages = { "snod.com.cn" })
+// @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class,
+// DataSourceTransactionManagerAutoConfiguration.class })
 @SpringBootApplication
 @MapperScan("snod.com.cn.dao")
-public class Application {
+public class ApiApplication {
 	public static void main(String[] args) {
 		System.setProperty("es.set.netty.runtime.available.processors", "false");
-		SpringApplication.run(Application.class);
+		SpringApplication.run(ApiApplication.class);
 	}
 
 	private CorsConfiguration buildConfig() {

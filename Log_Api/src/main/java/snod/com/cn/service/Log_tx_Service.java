@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.alibaba.fastjson.JSONObject;
 
-import snod.com.cn.common.Constant;
+import snod.com.cn.constant.Constant;
 import snod.com.cn.constant.Esconstant;
 import snod.com.cn.entity.LogtxInfo;
 import snod.com.cn.entity.PackageInfo;

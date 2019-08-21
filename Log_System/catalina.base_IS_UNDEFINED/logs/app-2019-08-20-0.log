@@ -1,0 +1,630 @@
+2019-08-20 11:42:37,538 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 6068 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 11:42:37,553 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 11:42:37,554 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 11:42:42,715 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 11:42:42,715 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 11:42:42,716 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 11:42:42,867 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 11:42:49,420 INFO (StartupInfoLogger.java:59)- Started Application in 12.541 seconds (JVM running for 13.659)
+2019-08-20 11:43:59,172 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 11:44:10,789 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ffca8590: Principal: org.springframework.security.core.userdetails.User@be32: Username: 123; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 901641d1-2d48-49a7-9450-b1ac05d7acae; Granted Authorities: test
+2019-08-20 11:47:22,538 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12180 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 11:47:22,543 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 11:47:22,544 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 11:47:26,304 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 11:47:26,304 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 11:47:26,305 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 11:47:26,462 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 11:47:32,484 INFO (StartupInfoLogger.java:59)- Started Application in 10.482 seconds (JVM running for 11.338)
+2019-08-20 13:45:04,060 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 716 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 13:45:04,066 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 13:45:04,067 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 13:45:08,964 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 13:45:08,965 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 13:45:08,965 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 13:45:09,123 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 13:45:16,029 INFO (StartupInfoLogger.java:59)- Started Application in 12.682 seconds (JVM running for 13.449)
+2019-08-20 14:09:09,758 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 820 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 14:09:09,763 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 14:09:09,764 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 14:09:13,782 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 14:09:13,783 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 14:09:13,783 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 14:09:13,916 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 14:09:19,979 INFO (StartupInfoLogger.java:59)- Started Application in 10.859 seconds (JVM running for 11.728)
+2019-08-20 14:09:42,361 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 14:09:55,673 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ffc863ac: Principal: org.springframework.security.core.userdetails.User@be32: Username: 123; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 8f69389f-3791-4e23-a490-ddfe7beee28f; Granted Authorities: test
+2019-08-20 14:09:57,709 INFO (MyAuthenticationSucessHandler.java:77)- 登录成功
+2019-08-20 14:37:49,070 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 11612 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 14:37:49,075 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 14:37:49,076 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 14:37:53,326 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 14:37:53,327 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 14:37:53,328 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 14:37:53,495 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 14:37:59,864 INFO (StartupInfoLogger.java:59)- Started Application in 11.378 seconds (JVM running for 12.284)
+2019-08-20 14:58:29,032 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 4752 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 14:58:29,037 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 14:58:29,038 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 14:58:33,558 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 14:58:33,559 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 14:58:33,560 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 14:58:33,705 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 14:58:40,538 INFO (StartupInfoLogger.java:59)- Started Application in 11.933 seconds (JVM running for 12.624)
+2019-08-20 14:59:00,738 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 14:59:00,964 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ffcb509c: Principal: org.springframework.security.core.userdetails.User@be32: Username: 123; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: 636c9b1a-f540-4110-bcc0-13bc041e5ef7; Granted Authorities: test
+2019-08-20 14:59:01,207 INFO (MyAuthenticationSucessHandler.java:77)- 登录成功
+2019-08-20 15:28:44,705 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 9852 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 15:28:44,709 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 15:28:44,709 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 15:28:48,873 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 15:28:48,874 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 15:28:48,874 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 15:28:49,014 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 15:28:54,987 INFO (StartupInfoLogger.java:59)- Started Application in 10.825 seconds (JVM running for 11.701)
+2019-08-20 15:30:47,376 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 4504 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 15:30:47,380 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 15:30:47,381 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 15:30:51,151 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 15:30:51,152 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 15:30:51,152 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 15:30:51,263 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 15:30:56,943 INFO (StartupInfoLogger.java:59)- Started Application in 9.988 seconds (JVM running for 10.724)
+2019-08-20 15:50:50,395 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 10152 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 15:50:50,400 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 15:50:50,401 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 15:50:54,338 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 15:50:54,339 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 15:50:54,339 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 15:50:54,506 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 15:51:00,713 INFO (StartupInfoLogger.java:59)- Started Application in 10.845 seconds (JVM running for 11.731)
+2019-08-20 15:51:29,012 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 15:51:29,212 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5b199b9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe21a0: RemoteIpAddress: 192.168.107.38; SessionId: 8a4bafdd-36dd-46d7-bc15-1ed6fed4cb5e; Granted Authorities: test
+2019-08-20 15:51:36,159 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 15:51:36,287 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5b199b9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe21a0: RemoteIpAddress: 192.168.107.38; SessionId: 8a4bafdd-36dd-46d7-bc15-1ed6fed4cb5e; Granted Authorities: test
+2019-08-20 15:51:37,244 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 15:51:37,372 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5b199b9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe21a0: RemoteIpAddress: 192.168.107.38; SessionId: 8a4bafdd-36dd-46d7-bc15-1ed6fed4cb5e; Granted Authorities: test
+2019-08-20 15:51:37,413 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 15:51:37,496 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 15:51:37,544 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5b199b9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe21a0: RemoteIpAddress: 192.168.107.38; SessionId: 8a4bafdd-36dd-46d7-bc15-1ed6fed4cb5e; Granted Authorities: test
+2019-08-20 15:51:37,631 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5b199b9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe21a0: RemoteIpAddress: 192.168.107.38; SessionId: 8a4bafdd-36dd-46d7-bc15-1ed6fed4cb5e; Granted Authorities: test
+2019-08-20 15:52:37,045 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 15:52:37,173 DEBUG (AbstractAuthenticationProcessingFilter.java:312)- Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5b199b9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: test; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe21a0: RemoteIpAddress: 192.168.107.38; SessionId: 8a4bafdd-36dd-46d7-bc15-1ed6fed4cb5e; Granted Authorities: test
+2019-08-20 16:40:08,529 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12672 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:40:08,535 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:40:08,535 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:44:07,411 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12392 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:44:07,415 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:44:07,416 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:51:11,208 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 11500 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:51:11,214 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:51:11,215 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:52:09,843 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 10648 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:52:09,848 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:52:09,848 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:53:57,300 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 11852 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:53:57,304 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:53:57,304 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:54:28,272 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 700 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:54:28,276 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:54:28,277 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:55:25,051 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 9688 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 16:55:25,055 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 16:55:25,055 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 16:55:29,636 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 16:55:29,637 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 16:55:29,637 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 16:55:29,822 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 16:55:36,723 INFO (StartupInfoLogger.java:59)- Started Application in 12.085 seconds (JVM running for 12.778)
+2019-08-20 17:06:53,912 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 17:06:57,781 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from tz_sys_user where username = ? 
+2019-08-20 17:06:58,982 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2019-08-20 17:07:01,483 ERROR (AbstractAuthenticationProcessingFilter.java:221)- An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+### The error may exist in file [D:\workspace_log\Log_Platform\Log_System\target\classes\mapper\SysUserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from tz_sys_user where username = ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:513)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at snod.com.cn.security.smscode.SmsCodeFilter.doFilterInternal(SmsCodeFilter.java:43)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at snod.com.cn.security.code.ValidateCodeFilter.doFilterInternal(ValidateCodeFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+### The error may exist in file [D:\workspace_log\Log_Platform\Log_System\target\classes\mapper\SysUserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from tz_sys_user where username = ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:99)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy100.querySysUserInfo(Unknown Source)
+	at snod.com.cn.service.SysUserService.querySysUserInfo(SysUserService.java:15)
+	at snod.com.cn.service.UserDetailService.loadUserByUsername(UserDetailService.java:32)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 90 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy144.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 98 common frames omitted
+2019-08-20 17:07:01,485 DEBUG (AbstractAuthenticationProcessingFilter.java:345)- Authentication request failed: org.springframework.security.authentication.InternalAuthenticationServiceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+### The error may exist in file [D:\workspace_log\Log_Platform\Log_System\target\classes\mapper\SysUserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from tz_sys_user where username = ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+org.springframework.security.authentication.InternalAuthenticationServiceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+### The error may exist in file [D:\workspace_log\Log_Platform\Log_System\target\classes\mapper\SysUserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from tz_sys_user where username = ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:513)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at snod.com.cn.security.smscode.SmsCodeFilter.doFilterInternal(SmsCodeFilter.java:43)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at snod.com.cn.security.code.ValidateCodeFilter.doFilterInternal(ValidateCodeFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+### The error may exist in file [D:\workspace_log\Log_Platform\Log_System\target\classes\mapper\SysUserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from tz_sys_user where username = ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:99)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy100.querySysUserInfo(Unknown Source)
+	at snod.com.cn.service.SysUserService.querySysUserInfo(SysUserService.java:15)
+	at snod.com.cn.service.UserDetailService.loadUserByUsername(UserDetailService.java:32)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 90 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'log_platform.tz_sys_user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy144.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 98 common frames omitted
+2019-08-20 17:07:01,486 DEBUG (AbstractAuthenticationProcessingFilter.java:346)- Updated SecurityContextHolder to contain null Authentication
+2019-08-20 17:07:01,486 DEBUG (AbstractAuthenticationProcessingFilter.java:347)- Delegating to authentication failure handler snod.com.cn.security.handler.MyAuthenticationFailureHandler@1eb2e8b2
+2019-08-20 17:08:07,409 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 8908 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:08:07,413 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:08:07,414 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 17:08:12,050 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 17:08:12,050 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 17:08:12,050 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 17:08:12,192 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 17:08:18,403 INFO (StartupInfoLogger.java:59)- Started Application in 11.536 seconds (JVM running for 12.394)
+2019-08-20 17:09:38,563 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 9736 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:09:38,568 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:09:38,568 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 17:09:43,009 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 17:09:43,009 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 17:09:43,010 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 17:09:43,128 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 17:09:48,775 INFO (StartupInfoLogger.java:59)- Started Application in 10.63 seconds (JVM running for 11.321)
+2019-08-20 17:10:06,405 DEBUG (AbstractAuthenticationProcessingFilter.java:206)- Request is to process authentication
+2019-08-20 17:10:08,948 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from tz_sys_user where username = ? 
+2019-08-20 17:10:10,145 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2019-08-20 17:10:11,047 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-08-20 17:10:24,684 DEBUG (AbstractAuthenticationProcessingFilter.java:345)- Authentication request failed: org.springframework.security.authentication.BadCredentialsException: 用户名或密码错误
+org.springframework.security.authentication.BadCredentialsException: 用户名或密码错误
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:93)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:513)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at snod.com.cn.security.smscode.SmsCodeFilter.doFilterInternal(SmsCodeFilter.java:43)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at snod.com.cn.security.code.ValidateCodeFilter.doFilterInternal(ValidateCodeFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-08-20 17:10:24,685 DEBUG (AbstractAuthenticationProcessingFilter.java:346)- Updated SecurityContextHolder to contain null Authentication
+2019-08-20 17:10:24,686 DEBUG (AbstractAuthenticationProcessingFilter.java:347)- Delegating to authentication failure handler snod.com.cn.security.handler.MyAuthenticationFailureHandler@56775ac4
+2019-08-20 17:13:21,615 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 10216 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:13:21,620 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:13:21,621 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 17:18:06,509 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 13176 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:18:06,514 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:18:06,515 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 17:18:10,852 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 17:18:10,853 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 17:18:10,853 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 17:18:10,981 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 17:18:16,990 INFO (StartupInfoLogger.java:59)- Started Application in 10.901 seconds (JVM running for 11.64)
+2019-08-20 17:26:45,131 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 5228 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:26:45,137 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:26:45,138 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 17:41:28,119 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12576 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:41:28,124 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:41:28,125 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 17:41:55,822 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 9672 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 17:41:55,826 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 17:41:55,826 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:02:30,911 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12904 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:02:30,917 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:02:30,917 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:02:47,853 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 10040 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:02:47,858 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:02:47,859 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:02:52,540 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:02:52,541 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:02:52,541 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:03:14,157 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 5740 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:03:14,162 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:03:14,162 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:06:09,242 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 9528 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:06:09,244 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:06:09,245 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:06:38,053 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 10012 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:06:38,055 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:06:38,055 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:06:41,731 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:06:41,732 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:06:41,732 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:06:41,837 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 18:06:46,883 INFO (StartupInfoLogger.java:59)- Started Application in 9.192 seconds (JVM running for 9.673)
+2019-08-20 18:07:13,687 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 5716 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:07:13,692 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:07:13,693 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:07:18,055 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:07:18,056 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:07:18,056 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:07:18,175 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 18:07:23,640 INFO (StartupInfoLogger.java:59)- Started Application in 10.38 seconds (JVM running for 11.068)
+2019-08-20 18:07:57,848 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12320 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:07:57,850 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:07:57,851 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:08:01,459 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:08:01,460 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:08:01,460 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:08:01,559 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 18:08:06,355 INFO (StartupInfoLogger.java:59)- Started Application in 8.853 seconds (JVM running for 9.321)
+2019-08-20 18:09:52,537 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 6396 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:09:52,541 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-20 18:09:52,541 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-20 18:09:56,715 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:09:56,716 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:09:56,716 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:09:56,840 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 18:10:01,532 INFO (StartupInfoLogger.java:59)- Started Application in 9.393 seconds (JVM running for 10.073)
+2019-08-20 18:11:16,315 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 13112 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:11:16,320 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-20 18:11:16,321 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-08-20 18:11:20,696 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:11:20,696 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:11:20,697 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:11:20,858 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 18:11:26,569 INFO (StartupInfoLogger.java:59)- Started Application in 10.813 seconds (JVM running for 11.526)
+2019-08-20 18:18:37,979 INFO (StartupInfoLogger.java:50)- Starting Application on N9E7I63DAFWHTOH with PID 12704 (D:\workspace_log\Log_Platform\Log_System\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_System)
+2019-08-20 18:18:37,984 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-20 18:18:37,985 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-08-20 18:18:42,187 DEBUG (GenericFilterBean.java:241)- Filter 'loginAuthenticationFilter' configured for use
+2019-08-20 18:18:42,188 DEBUG (GenericFilterBean.java:241)- Filter 'smsCodeFilter' configured for use
+2019-08-20 18:18:42,190 DEBUG (GenericFilterBean.java:241)- Filter 'validateCodeFilter' configured for use
+2019-08-20 18:18:42,306 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-08-20 18:18:47,120 INFO (StartupInfoLogger.java:59)- Started Application in 9.685 seconds (JVM running for 10.425)

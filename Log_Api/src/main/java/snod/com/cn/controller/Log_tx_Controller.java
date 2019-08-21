@@ -47,7 +47,7 @@ import snod.com.cn.utils.ResultInfo;
 import snod.com.cn.utils.ResultTools;
 import snod.com.cn.utils.StringUtil;
 
-@Api(tags= {"日志接口"})
+@Api(tags= {"腾讯日志接口"})
 @RestController
 @RequestMapping("/tx_log")
 public class Log_tx_Controller {
