@@ -21,7 +21,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.alibaba.fastjson.JSONObject;
 
-import snod.com.cn.controller.ValidateController;
+import snod.com.cn.controller.SysLoginController;
 import snod.com.cn.entity.SysUser;
 import snod.com.cn.redis.RedisService;
 import snod.com.cn.utils.JsonObjectUtil;
@@ -58,7 +58,7 @@ public class ValidateCodeFilter extends OncePerRequestFilter{
     }
 
     private void validateCode(ServletWebRequest servletWebRequest, String codeInRequest) throws ServletRequestBindingException {
-    	String codeInSession = (String) sessionStrategy.getAttribute(servletWebRequest, ValidateController.SESSION_KEY_IMAGE_CODE);
+    	String codeInSession = (String) sessionStrategy.getAttribute(servletWebRequest, SysLoginController.SESSION_KEY_IMAGE_CODE);
 //        String codeInRequest = ServletRequestUtils.getStringParameter(servletWebRequest.getRequest(), "imageCode");
 
         if (StringUtils.isBlank(codeInRequest)) {

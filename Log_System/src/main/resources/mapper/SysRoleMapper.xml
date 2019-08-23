@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="snod.com.cn.dao.SysRoleDao">
+
+	<delete id="deleteBatch"  parameterType="Long">
+		delete from tz_sys_role where role_id in 
+  		<foreach collection="roleIds" item="roleId" index="no" open="("  
+            separator="," close=")">  
+            #{roleId}  
+        </foreach>
+	</delete>
+	
+	<select id="listRoleIdByUserId" resultType="Long">
+		select role_id from tz_sys_user_role where user_id = #{userId}
+	</select>
+	
+	
+	<select id="queryRoleList" resultType="snod.com.cn.entity.SysRole">
+		select * from tz_sys_role
+		<where>
+		 <if test="roleName!= null ">
+       		role_name = #{roleName},
+     	 </if>
+		 
+		</where> 
+		 limit #{current},#{size}
+	</select>
+	
+	<select id="queryCountRoleList" resultType="Long">
+		select count(*) from tz_sys_role
+		 <if test="roleName!= null ">
+       		role_name = #{roleName},
+     	 </if>
+	</select>
+	
+	
+	<select id="queryRoleListAll" resultType="Long">
+		select * from tz_sys_role
+	</select>
+	<select id="getroleInfoById" resultType="Long">
+		select * from tz_sys_role where role_id = #{roleId}
+	</select>
+	<insert id="inserRoleInfo" useGeneratedKeys="true" keyProperty="roleId" keyColumn="role_id" parameterType="snod.com.cn.entity.SysRole">
+		insert into tz_sys_role (role_id,role_name,remark,create_user_id,create_time) values(
+			#{roleId},
+			#{roleName},
+			#{remark},
+			#{createUserId},
+			#{createTime}
+		)
+	</insert>
+	<update id="updateRoleInfo" parameterType="snod.com.cn.entity.SysRole">
+		update tz_sys_role set 
+		 <if test="roleName!= null ">
+       		role_name = #{roleName},
+     	 </if>
+     	  <if test="remark null ">
+       		remark = #{remark},
+     	 </if>
+     	 
+		WHERE role_id = #{roleId}
+	</update>
+</mapper>

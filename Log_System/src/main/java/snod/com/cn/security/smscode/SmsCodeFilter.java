@@ -18,7 +18,7 @@ import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import snod.com.cn.controller.ValidateController;
+import snod.com.cn.controller.SysLoginController;
 import snod.com.cn.security.code.ValidateCodeException;
 
 @Component
@@ -47,7 +47,7 @@ public class SmsCodeFilter extends OncePerRequestFilter {
         String smsCodeInRequest = ServletRequestUtils.getStringParameter(servletWebRequest.getRequest(), "smsCode");
         String mobileInRequest = ServletRequestUtils.getStringParameter(servletWebRequest.getRequest(), "smsCode");
 
-        SmsCode codeInSession = (SmsCode) sessionStrategy.getAttribute(servletWebRequest, ValidateController.SESSION_KEY_SMS_CODE + mobileInRequest);
+        SmsCode codeInSession = (SmsCode) sessionStrategy.getAttribute(servletWebRequest, SysLoginController.SESSION_KEY_SMS_CODE + mobileInRequest);
 
         if (StringUtils.isBlank(smsCodeInRequest)) {
             throw new ValidateCodeException("验证码不能为空！");
@@ -56,13 +56,13 @@ public class SmsCodeFilter extends OncePerRequestFilter {
             throw new ValidateCodeException("验证码不存在！");
         }
         if (codeInSession.isExpire()) {
-            sessionStrategy.removeAttribute(servletWebRequest, ValidateController.SESSION_KEY_IMAGE_CODE);
+            sessionStrategy.removeAttribute(servletWebRequest, SysLoginController.SESSION_KEY_IMAGE_CODE);
             throw new ValidateCodeException("验证码已过期！");
         }
         if (!StringUtils.equalsIgnoreCase(codeInSession.getCode(), smsCodeInRequest)) {
             throw new ValidateCodeException("验证码不正确！");
         }
-        sessionStrategy.removeAttribute(servletWebRequest, ValidateController.SESSION_KEY_IMAGE_CODE);
+        sessionStrategy.removeAttribute(servletWebRequest, SysLoginController.SESSION_KEY_IMAGE_CODE);
 
     }
 }

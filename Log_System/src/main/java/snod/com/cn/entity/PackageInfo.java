@@ -2,8 +2,10 @@ package snod.com.cn.entity;
 
 import java.util.Date;
 
+import lombok.Data;
 
-//@Document(indexName= "ota_packeage",type="packeage")
+
+@Data
 public class PackageInfo {
 	
 	private String id;
@@ -19,66 +21,7 @@ public class PackageInfo {
 	
 	
 	
-	public long getPackeageSize() {
-		return packeageSize;
-	}
-	public void setPackeageSize(long packeageSize) {
-		this.packeageSize = packeageSize;
-	}
-	public String getPackageName() {
-		return PackageName;
-	}
-	public void setPackageName(String packageName) {
-		PackageName = packageName;
-	}
-	public String getPackagePath() {
-		return PackagePath;
-	}
-	public void setPackagePath(String packagePath) {
-		PackagePath = packagePath;
-	}
-	public Date getCreateTime() {
-		return createTime;
-	}
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getSn() {
-		return sn;
-	}
-	public void setSn(String sn) {
-		this.sn = sn;
-	}
-	public String getProduct() {
-		return product;
-	}
-	public void setProduct(String product) {
-		this.product = product;
-	}
-	public String getVersion() {
-		return version;
-	}
-	public void setVersion(String version) {
-		this.version = version;
-	}
-	public String getCountry() {
-		return country;
-	}
-	public void setCountry(String country) {
-		this.country = country;
-	}
-	public String getLanguage() {
-		return language;
-	}
-	public void setLanguage(String language) {
-		this.language = language;
-	}
+	
 
 	
 	

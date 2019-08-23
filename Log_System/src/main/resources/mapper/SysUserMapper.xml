@@ -7,6 +7,16 @@
 		select * from tz_sys_user where username = #{username}
 	</select>
 	
+	<select id="queryAllPerms" resultType="snod.com.cn.entity.SysUser">
+		select m.perms from tz_sys_user_role ur 
+			LEFT JOIN tz_sys_role_menu rm on ur.role_id = rm.role_id 
+			LEFT JOIN tz_sys_menu m on rm.menu_id = m.menu_id 
+		where ur.user_id = #{userId}
+	</select>
+	<select id="getSysUserById" resultType="snod.com.cn.entity.SysUser">
+		select * from tz_sys_user where user_id = #{userId}
+	</select>
+	
 		<!--查询用户的所有菜单 --> 
 <!-- 	<select id="listMenuByUserId" resultType="com.yami.shop.sys.model.SysMenu"> -->
 <!-- 		SELECT DISTINCT m.menu_id AS menu_id,m.parent_id,m.name,url,m.type,m.icon,m.order_num FROM tz_sys_user_role ur  -->

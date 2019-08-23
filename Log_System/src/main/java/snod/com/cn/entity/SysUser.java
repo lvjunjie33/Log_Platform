@@ -1,70 +1,50 @@
 package snod.com.cn.entity;
 
-import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.format.annotation.DateTimeFormat;
 
-@Component
-public class SysUser implements Serializable{
-	 private static final long serialVersionUID = 3497935890426858541L;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
-	    private String userName;
+import lombok.Data;
 
-	    private String password;
+@Data
+@TableName("tz_sys_user")
+public class SysUser{
+	
+	@TableId
+	private long userId;
 
-	    private boolean accountNonExpired = true;
+	private String userName;
 
-	    private boolean accountNonLocked= true;
+	private String password;
 
-	    private boolean credentialsNonExpired= true;
+	private String email;
+	
+	private String mobile;
+	
+	private int status;
+	
+	private int createUserId;
+	
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+	private Date createTime;
+	
+	private long shopId;
 
-	    private boolean enabled= true;
+	private boolean accountNonExpired = true;
 
-	    public String getUserName() {
-	        return userName;
-	    }
+	private boolean accountNonLocked = true;
 
-	    public void setUserName(String userName) {
-	        this.userName = userName;
-	    }
+	private boolean credentialsNonExpired = true;
 
-	    public String getPassword() {
-	        return password;
-	    }
+	private boolean enabled = true;
+	@TableField(exist=false)
+	private List<SysRole> roles;
+	
+	
 
-	    public void setPassword(String password) {
-	        this.password = password;
-	    }
-
-	    public boolean isAccountNonExpired() {
-	        return accountNonExpired;
-	    }
-
-	    public void setAccountNonExpired(boolean accountNonExpired) {
-	        this.accountNonExpired = accountNonExpired;
-	    }
-
-	    public boolean isAccountNonLocked() {
-	        return accountNonLocked;
-	    }
-
-	    public void setAccountNonLocked(boolean accountNonLocked) {
-	        this.accountNonLocked = accountNonLocked;
-	    }
-
-	    public boolean isCredentialsNonExpired() {
-	        return credentialsNonExpired;
-	    }
-
-	    public void setCredentialsNonExpired(boolean credentialsNonExpired) {
-	        this.credentialsNonExpired = credentialsNonExpired;
-	    }
-
-	    public boolean isEnabled() {
-	        return enabled;
-	    }
-
-	    public void setEnabled(boolean enabled) {
-	        this.enabled = enabled;
-	    }
 }
