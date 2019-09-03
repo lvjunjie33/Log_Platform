@@ -1,13 +1,3 @@
-/*
- * Copyright (c) 2018-2999 广州亚米信息科技有限公司 All rights reserved.
- *
- * https://www.gz-yami.com/
- *
- * 未经允许，不可做商业用途！
- *
- * 版权所有，侵权必究！
- */
-
 package snod.com.cn.service;
 
 
@@ -17,20 +7,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cn.hutool.core.collection.CollectionUtil;
 import snod.com.cn.dao.SysMenuDao;
+import snod.com.cn.dao.SysRoleMenuDao;
 import snod.com.cn.entity.SysMenu;
 
 /**
- * @author lgh
+ * @author lvjj
  */
 @Service("sysMenuService")
 public class SysMenuService{
-//	@Autowired
-//	private SysRoleMenuMapper sysRoleMenuMapper;
+	@Autowired
+	private SysRoleMenuDao sysRoleMenuDao;
 	@Autowired
 	private SysMenuDao sysMenuDao;
 
@@ -60,13 +53,6 @@ public class SysMenuService{
 		return rootMenu;
 	}
 
-//	@Override
-//	public void deleteMenuAndRoleMenu(Long menuId){
-//		//删除菜单
-//		this.removeById(menuId);
-//		//删除菜单与角色关联
-//		sysRoleMenuMapper.deleteByMenuId(menuId);
-//	}
 	
 //	public List<SysMenu> queryListSysMenu() {
 //		return sysMenuDao.queryListSysMenu();
@@ -88,14 +74,38 @@ public class SysMenuService{
 		return sysMenuDao.listRootMenu();
 	}
 
-//	@Override
-//	public List<SysMenu> listChildrenMenuByParentId(Long parentId) {
-//		return sysMenuMapper.listChildrenMenuByParentId(parentId);
-//	}
+	
+	public List<SysMenu> listChildrenMenuByParentId(Long parentId) {
+		return sysMenuDao.listChildrenMenuByParentId(parentId);
+	}
 
 
 	public List<SysMenu> listMenuAndBtn() {
 		return sysMenuDao.listMenuAndBtn();
+	}
+
+	public SysMenu queryMenuInfo(Long menuId) {
+		return sysMenuDao.queryMenuInfo(menuId);
+	}
+
+	public void insertMenu(@Valid SysMenu menu) {
+		 sysMenuDao.insertMenu(menu);
+	}
+
+	public SysMenu queryMenuInfoByParentId(Long parentId) {
+		return sysMenuDao.queryMenuInfoByParentId(parentId);
+	}
+
+	public void updateById(@Valid SysMenu menu) {
+		 sysMenuDao.updateById(menu);
+	}
+
+	public void deleteMenuAndRoleMenu(Long menuId) {
+		//删除菜单
+		sysMenuDao.removeById(menuId);
+		//删除菜单与角色关联
+		sysRoleMenuDao.deleteByMenuId(menuId);
+		
 	}
 	
 }

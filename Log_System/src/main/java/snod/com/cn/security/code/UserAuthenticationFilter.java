@@ -13,7 +13,9 @@ import com.alibaba.fastjson.JSONObject;
 import snod.com.cn.constant.Constant;
 import snod.com.cn.entity.SysUser;
 import snod.com.cn.utils.JsonObjectUtil;
-
+/**
+ * @author lvjj
+ */
 public class UserAuthenticationFilter extends UsernamePasswordAuthenticationFilter{
 
 //	@Override

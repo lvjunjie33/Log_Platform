@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import snod.com.cn.entity.PackageInfo;
+import snod.com.cn.entity.LogOtaUpgrade;
 
 
 
@@ -74,7 +74,7 @@ public class FileUtil {
     
     
     public static void getDownload(InputStream inputStream, HttpServletRequest request,
-    		HttpServletResponse response, List<PackageInfo> endTimeTempList) {
+    		HttpServletResponse response, List<LogOtaUpgrade> endTimeTempList) {
     
 	    // Get your file stream from wherever.
 //	    String fullPath = "D:\\upload_test\\" + name;

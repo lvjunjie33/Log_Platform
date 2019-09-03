@@ -1,15 +1,35 @@
-2019-08-21 11:11:10,844 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 11896 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
-2019-08-21 11:11:10,851 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-08-21 11:11:10,852 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
-2019-08-21 11:11:14,188 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
-2019-08-21 11:11:19,092 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 8.801 seconds (JVM running for 9.5)
-2019-08-21 11:13:29,168 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12244 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
-2019-08-21 11:13:29,175 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-08-21 11:13:29,176 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
-2019-08-21 11:13:32,418 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
-2019-08-21 11:13:37,475 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 8.84 seconds (JVM running for 9.531)
-2019-08-21 11:20:55,343 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12104 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
-2019-08-21 11:20:55,349 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-08-21 11:20:55,349 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
-2019-08-21 11:20:58,398 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
-2019-08-21 11:21:03,083 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 8.296 seconds (JVM running for 8.977)
+2019-09-03 10:16:41,085 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 212 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 10:16:41,117 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 10:16:41,117 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 10:16:45,195 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 10:16:51,208 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.666 seconds (JVM running for 11.352)
+2019-09-03 10:18:54,251 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 10616 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 10:18:54,251 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 10:18:54,251 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 10:18:58,347 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 10:19:04,142 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.424 seconds (JVM running for 11.123)
+2019-09-03 10:21:30,703 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 10424 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 10:21:30,703 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 10:21:30,703 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 10:21:34,672 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 10:21:40,215 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.03 seconds (JVM running for 10.727)
+2019-09-03 10:24:39,241 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 10572 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 10:24:39,241 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 10:24:39,241 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 10:24:43,366 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 10:24:49,028 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.31 seconds (JVM running for 11.065)
+2019-09-03 11:14:38,034 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 10016 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 11:14:38,050 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 11:14:38,050 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 11:14:42,292 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 11:14:48,157 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.647 seconds (JVM running for 11.319)
+2019-09-03 11:24:39,880 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 10296 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 11:24:39,880 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 11:24:39,880 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 11:24:44,269 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 11:24:50,325 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 11.021 seconds (JVM running for 11.755)
+2019-09-03 11:25:36,448 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12804 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-09-03 11:25:36,448 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-03 11:25:36,448 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-09-03 11:25:40,292 INFO (ElasticsearchConfig.java:55)- Elasticsearch初始化开始。。。。。
+2019-09-03 11:25:45,636 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 9.725 seconds (JVM running for 10.42)

@@ -27,7 +27,9 @@ import snod.com.cn.redis.RedisService;
 import snod.com.cn.utils.JsonObjectUtil;
 
 
-
+/**
+ * @author lvjj
+ */
 @Component
 public class ValidateCodeFilter extends OncePerRequestFilter{
 

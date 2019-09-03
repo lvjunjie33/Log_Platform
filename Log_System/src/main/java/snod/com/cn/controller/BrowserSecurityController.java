@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * @author MrBird
+ * @author lvjj
  */
 @RestController
 public class BrowserSecurityController {
@@ -42,19 +42,26 @@ public class BrowserSecurityController {
          response.setContentType("application/json;charset=utf-8");
          response.getWriter().write("登录超时，请重新登录");
     }
-    
+    /**
+     * 测试spring security获取登录后授权信息
+     * */
     @GetMapping("index")
     public Object index(Authentication authentication) {
         // return SecurityContextHolder.getContext().getAuthentication();
     	System.out.println(authentication.getPrincipal());
         return authentication;
     }
-    
+    /**
+     * 测试权限
+     * */
     @GetMapping("/auth/admin")
     @PreAuthorize("hasAuthority('admin')")
     public String authenticationTest() {
         return "您拥有admin权限，可以查看";
     }
+    /**
+     * 测试权限
+     * */
     @GetMapping("/auth/test")
     @PreAuthorize("hasAuthority('test')")
     public String authenticationTests() {

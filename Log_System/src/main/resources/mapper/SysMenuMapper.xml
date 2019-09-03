@@ -4,33 +4,105 @@
 <mapper namespace="snod.com.cn.dao.SysMenuDao">
 
 	<select id="listMenuIdByRoleId" resultType="Long">
-		select menu_id from tz_sys_role_menu where role_id = #{roleId}
+		select menu_id from
+		tz_sys_role_menu where role_id = #{roleId}
 	</select>
 	
-	<!-- 查询用户的所有菜单 --> 
-	<select id="listMenuByUserId" resultType="snod.com.cn.entity.SysMenu">
-		SELECT DISTINCT m.menu_id AS menu_id,m.parent_id,m.name,url,m.type,m.icon,m.order_num FROM tz_sys_user_role ur 
-			LEFT JOIN tz_sys_role_menu rm ON ur.role_id = rm.role_id LEFT JOIN tz_sys_menu m ON m.`menu_id` = rm.`menu_id`
-		WHERE  ur.user_id = #{userId} and m.type != 2 order by order_num
+	<!-- 查询用户的所有菜单 -->
+	<select id="listMenuByUserId"
+		resultType="snod.com.cn.entity.SysMenu">
+		SELECT DISTINCT m.menu_id AS
+		menu_id,m.parent_id,m.name,url,m.type,m.icon,m.order_num FROM
+		tz_sys_user_role ur
+		LEFT JOIN tz_sys_role_menu rm ON ur.role_id = rm.role_id LEFT JOIN
+		tz_sys_menu m ON m.`menu_id` = rm.`menu_id`
+		WHERE ur.user_id =
+		#{userId} and m.type != 2 order by order_num
 	</select>
-	<!-- 查询所有菜单 --> 
+	<!-- 查询所有菜单 -->
 	<select id="listMenu" resultType="snod.com.cn.entity.SysMenu">
-		select * from tz_sys_menu where `type` != 2 order by order_num
+		select * from tz_sys_menu where
+		`type` != 2 order by order_num
 	</select>
-	
-	<select id="listSimpleMenuNoButton" resultType="snod.com.cn.entity.SysMenu">
-		select menu_id ,parent_id ,`name` from tz_sys_menu where `type` != 2 order by order_num 
+
+	<select id="listSimpleMenuNoButton"
+		resultType="snod.com.cn.entity.SysMenu">
+		select menu_id ,parent_id ,`name` from tz_sys_menu where
+		`type` != 2 order by order_num
 	</select>
-	
-	<select id="listRootMenu" resultType="snod.com.cn.entity.SysMenu">
+
+	<select id="listRootMenu"
+		resultType="snod.com.cn.entity.SysMenu">
 		select menu_id,`name` from tz_sys_menu where `type` = 0
 	</select>
-	
-	<select id="listChildrenMenuByParentId" resultType="snod.com.cn.entity.SysMenu">
-		select menu_id,`name` from tz_sys_menu where parent_id = #{parentId}
+
+	<select id="listChildrenMenuByParentId"
+		resultType="snod.com.cn.entity.SysMenu">
+		select menu_id,`name` from tz_sys_menu where parent_id =
+		#{parentId}
 	</select>
-	
-	<select id="listMenuAndBtn" resultType="snod.com.cn.entity.SysMenu">
-	   select * from tz_sys_menu order by order_num
+
+	<select id="listMenuAndBtn"
+		resultType="snod.com.cn.entity.SysMenu">
+		select * from tz_sys_menu order by order_num
 	</select>
+
+	<select id="queryMenuInfo"
+		resultType="snod.com.cn.entity.SysMenu">
+		select * from tz_sys_menu where menu_id=#{menuId}
+	</select>
+	<select id="queryMenuInfoByParentId"
+		resultType="snod.com.cn.entity.SysMenu">
+		select * from tz_sys_menu where menu_id=#{parentId}
+	</select>
+	<insert id="insertMenu" useGeneratedKeys="true"
+		keyProperty="menuId" keyColumn="menu_id"
+		parameterType="snod.com.cn.entity.SysMenu">
+		insert into
+		tz_sys_menu(menu_id,parent_id,name,url,perms,type,icon,order_num)
+		values
+		(
+			#{menuId},
+			#{parentId},
+			#{name},
+			#{url},
+			#{perms},
+			#{type},
+			#{icon},
+			#{orderNum}
+		)
+	</insert>
+	<update id="updateById" parameterType="snod.com.cn.entity.SysMenu">
+	update tz_sys_menu 
+	<set>
+		<if test="parentId!= null">
+			parent_id=#{parentId},
+		</if>
+		<if test="name!= null">
+			name=#{name},
+		</if>
+		<if test="url!= null">
+			url=#{url},
+		</if>
+		<if test="perms!= null">
+			perms=#{perms},
+		</if>
+		<if test="type!= null">
+			type=#{type},
+		</if>
+		<if test="icon!= null">
+			icon=#{icon},
+		</if>
+		<if test="orderNum!= null">
+			order_num=#{orderNum},
+		</if>
+	</set>
+	<where>
+		menu_id=#{menuId}
+	</where>
+	</update>
+	
+	<delete id="removeById" parameterType="Long">
+		delete from tz_sys_menu where menu_id=#{menuId}
+	</delete>
 </mapper>

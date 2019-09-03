@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="snod.com.cn.dao.ScheduleJobDao">
+  <resultMap id="BaseResultMap" type="snod.com.cn.entity.ScheduleJob">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="job_id" jdbcType="BIGINT" property="jobId" />
+    <result column="bean_name" jdbcType="VARCHAR" property="beanName" />
+    <result column="method_name" jdbcType="VARCHAR" property="methodName" />
+    <result column="params" jdbcType="VARCHAR" property="params" />
+    <result column="cron_expression" jdbcType="VARCHAR" property="cronExpression" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+      <result column="group_name" jdbcType="VARCHAR" property="groupName" />
+  </resultMap>
+	
+	<!-- 批量更新状态 -->
+	<update id="updateBatch">
+		update tz_schedule_job set status = #{status} where job_id in
+		<foreach item="jobId" collection="jobIds"  open="(" separator="," close=")">
+			#{jobId}
+		</foreach>
+	</update>
+	
+	<select id="queryScheduleJobListAll" resultType="snod.com.cn.entity.ScheduleJob">
+		select * from tz_schedule_job sj
+	</select>
+	
+	<select id="queryScheduleJobList" resultType="snod.com.cn.entity.ScheduleJob">
+		select * from tz_schedule_job sj
+		<where>
+			<if test="beanName!=null">
+				sj.bean_name=#{beanName}
+			</if>
+		</where>
+		limit #{index},#{size}
+	</select>
+	
+	<select id="queryScheduleJobListCount" resultType="Long"> 
+		select count(*) from tz_schedule_job
+		<where>
+			<if test="beanName!=null">
+				sj.bean_name=#{beanName}
+			</if>
+		</where>
+	</select>
+	
+	<select id="queryScheduleJobInfo" resultType="snod.com.cn.entity.ScheduleJob">
+		select * from tz_schedule_job where job_id=#{jobId}
+	</select>
+	
+	<select id="queryScheduleJobInfoByIds" resultType="snod.com.cn.entity.ScheduleJob">
+	select * from tz_schedule_job where job_id
+	in 
+	<foreach collection="ids" item="jobId" index="no" open="("  
+            separator="," close=")">  
+           #{jobId} 
+        </foreach>
+	</select>
+	<insert id="insertScheduleJob" useGeneratedKeys="true" keyProperty="jobId" keyColumn="job_id" parameterType="snod.com.cn.entity.ScheduleJob">
+		insert into tz_schedule_job
+		(
+			job_id,
+			bean_name,
+			method_name,
+			params,
+			cron_expression,
+			status,
+			remark,
+			create_time
+		)
+		values
+		(
+			#{jobId},
+			#{beanName},
+			#{methodName},
+			#{params},
+			#{cronExpression},
+			#{status},
+			#{remark},
+			#{createTime}
+		)
+	</insert>
+	
+	<update id="updateScheduleJobInfo" parameterType="snod.com.cn.entity.ScheduleJob">
+	update tz_schedule_job
+	<set>
+		<if test="beanName!=null">
+			bean_name=#{beanName},
+		</if>
+		<if test="methodName!=null">
+			method_name=#{methodName},
+		</if>
+		<if test="params!=null">
+			params=#{params},
+		</if>
+		<if test="cronExpression!=null">
+			cron_expression=#{cronExpression},
+		</if>
+		<if test="status!=null">
+			status=#{status},
+		</if>
+		<if test="remark!=null">
+			remark=#{remark},
+		</if>
+	</set>
+	<where>
+		job_id=#{jobId}
+	</where>
+	</update>
+	
+	<delete id="deleteBatchIds">
+		delete from tz_schedule_job where job_id 
+		in
+		<foreach collection="ids" item="jobId" index="no" open="("  
+            separator="," close=")">  
+           #{jobId} 
+        </foreach>
+		
+	</delete>
+</mapper>

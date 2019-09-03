@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="snod.com.cn.dao.ScheduleJobLogDao">
+  <resultMap id="BaseResultMap" type="snod.com.cn.entity.ScheduleJobLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="log_id" jdbcType="BIGINT" property="logId" />
+    <result column="job_id" jdbcType="BIGINT" property="jobId" />
+    <result column="bean_name" jdbcType="VARCHAR" property="beanName" />
+    <result column="method_name" jdbcType="VARCHAR" property="methodName" />
+    <result column="params" jdbcType="VARCHAR" property="params" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="error" jdbcType="VARCHAR" property="error" />
+    <result column="times" jdbcType="INTEGER" property="times" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <select id="queryListScheduleJobLog" resultType="snod.com.cn.entity.ScheduleJobLog">
+  	select * from tz_schedule_job_log 
+  		<where>
+			<if test="jobId!=null">
+				job_id=#{jobId}
+			</if>
+		</where>
+		limit #{index},#{size}
+  </select>
+  
+  <select id="queryListScheduleJobLogCount" parameterType="Long" resultType="Long">
+ 	 select count(*) from tz_schedule_job_log 
+	  	<where>
+			<if test="jobId!=null">
+					job_id=#{jobId}
+				</if>
+		</where>
+  </select>
+  <insert id="insertScheduleJobLog" useGeneratedKeys="true" keyProperty="logId" keyColumn="log_id" parameterType="snod.com.cn.entity.ScheduleJobLog" >
+  	insert ignore into tz_schedule_job_log
+  	(
+  		log_id,
+  		job_id,
+  		bean_name,
+  		method_name,
+  		params,
+  		status,
+  		error,
+  		times,
+  		create_time
+  	)
+  	values
+  	(
+  		#{logId},
+  		#{jobId},
+  		#{beanName},
+  		#{methodName},
+  		#{params},
+  		#{status},
+  		#{error},
+  		#{times},
+  		#{createTime}
+   	)
+  </insert>
+  
+  
+</mapper>

@@ -16,9 +16,9 @@ import lombok.Data;
 public class SysUser{
 	
 	@TableId
-	private long userId;
+	private Long userId;
 
-	private String userName;
+	private String username;
 
 	private String password;
 
@@ -28,12 +28,12 @@ public class SysUser{
 	
 	private int status;
 	
-	private int createUserId;
+	private Long createUserId;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date createTime;
 	
-	private long shopId;
+	private Long shopId;
 
 	private boolean accountNonExpired = true;
 
@@ -43,8 +43,8 @@ public class SysUser{
 
 	private boolean enabled = true;
 	@TableField(exist=false)
-	private List<SysRole> roles;
-	
-	
+	private List<Long> roles;
+	@TableField(exist=false)
+	private List<Long> roleIdList;
 
 }

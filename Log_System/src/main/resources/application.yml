@@ -2,7 +2,7 @@ server:
   port: 8068
 spring:
   datasource:
-    url: jdbc:mysql://192.168.113.15:3306/yami?allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://192.168.113.15:3306/log_platform_sys?allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
     username: root
     password: 3nodapp
     driver-class-name: com.mysql.cj.jdbc.Driver

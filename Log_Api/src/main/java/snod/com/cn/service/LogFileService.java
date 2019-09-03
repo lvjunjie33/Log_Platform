@@ -20,11 +20,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.alibaba.fastjson.JSONObject;
 
+import snod.com.cn.config.RabbitMqConfig;
 import snod.com.cn.constant.Constant;
 import snod.com.cn.constant.Esconstant;
-import snod.com.cn.entity.LogtxInfo;
-import snod.com.cn.entity.PackageInfo;
-import snod.com.cn.entity.UploadFile;
+import snod.com.cn.dao.LogFileDao;
+import snod.com.cn.entity.LogFileInfo;
+import snod.com.cn.entity.LogOtaUpgrade;
+//import snod.com.cn.entity.UploadFile;
 import snod.com.cn.entity.vo.FileVo;
 import snod.com.cn.entity.vo.SearchVo;
 import snod.com.cn.redis.RedisService;
@@ -34,41 +36,44 @@ import snod.com.cn.utils.elasticsearch.ElasticsearchUtil;
 import snod.com.cn.utils.elasticsearch.EsPage;
 
 @Service
-public class Log_tx_Service {
+public class LogFileService {
 	
-//	@Autowired
-//	private Log_tx_Repository logRepository;
-//	@Autowired
-//	private Ota_package_Repository OtaPackageRepository;
+	@Autowired
+	private RabbitMqConfig rabbitMqConfig;
+	@Autowired
+	private LogFileDao logFileDao;
 	@Autowired
 	private RedisService redisService;
 	/**
 	 * 查询
 	 * */
-	public LogtxInfo findTest(String email) {
+	public LogFileInfo findTest(String email) {
 		return null;
 		
 		
 	}
-	public LogtxInfo saveFile(String fileName, String deviceName,String requestIp, 
-			 int remote, int logType, int fileType, String sn, String FilePath) {
-		LogtxInfo tx=new LogtxInfo();
-		tx.setCreateTime(new Date());
-		tx.setDeviceName(deviceName);
-		tx.setFileType(fileType);
-		tx.setIp(requestIp);
-		tx.setLogFileName(fileName);
-		tx.setLogType(logType);
-		tx.setSn(sn);
-		tx.setPort(remote);
-		tx.setLogFilePath(FilePath);
-		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(tx);
-		String id=ElasticsearchUtil.addData(jsonObject, Esconstant.TX_INDEXNAME, Esconstant.TX_TYPE);
-		tx.setId(id);
-		return tx;
+	public LogFileInfo saveFileFtp(String fileName, String deviceName,int logType, int fileType, String sn, String filePath, long fileSize) {
+		LogFileInfo logFileInfo=new LogFileInfo();
+		logFileInfo.setDeviceName(deviceName);
+		logFileInfo.setSn(sn);
+		logFileInfo.setLogType(logType);
+		logFileInfo.setFileType(fileType);
+		logFileInfo.setFileName(fileName);
+		logFileInfo.setFilePath(filePath);
+		logFileInfo.setFileSize(fileSize);
+		logFileInfo.setCreateTime(new Date());
+		
+//		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(tx);
+//		String id=ElasticsearchUtil.addData(jsonObject, Esconstant.TX_INDEXNAME, Esconstant.TX_TYPE);
+//		logFileInfo.setId(id);
+		//数据库保存文件信息
+		logFileDao.saveFile(logFileInfo);
+		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(logFileInfo);
+		//异步发送mq
+		rabbitMqConfig.send(jsonObject.toJSONString());
+		return logFileInfo;
 		
 	}
-	
 	
 //	//es测试
 //	public Map<String, Object> esTest(String email) {
@@ -84,7 +89,7 @@ public class Log_tx_Service {
 //        }
 //		return null;
 //	}
-	public Page<LogtxInfo> queryLogtx(SearchVo searchInfo) throws ParseException {
+	public Page<LogFileInfo> queryLogtx(SearchVo searchInfo) throws ParseException {
 		 BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
 		 boolQuery.must(QueryBuilders.matchQuery("deviceName", searchInfo.getParam()))
 				.must(QueryBuilders.matchQuery("mac", searchInfo.getParam()))	
@@ -148,7 +153,7 @@ public class Log_tx_Service {
 	}
 	
 	
-	public Page<LogtxInfo> queryLogFile(String sn) throws ParseException {
+	public Page<LogFileInfo> queryLogFile(String sn) throws ParseException {
 		
 		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
 		long current=System.currentTimeMillis();//当前时间毫秒数
@@ -199,7 +204,7 @@ public class Log_tx_Service {
 	
 	
 	
-	public Page<PackageInfo> queryOtaPackage(String sn) throws ParseException {
+	public Page<LogOtaUpgrade> queryOtaPackage(String sn) throws ParseException {
 		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
 		long current=System.currentTimeMillis();//当前时间毫秒数
         long zero=current/(1000*3600*24)*(1000*3600*24)-TimeZone.getDefault().getRawOffset();//今天零点零分零秒的毫秒数
@@ -343,36 +348,36 @@ public class Log_tx_Service {
             	//第一片，数据库创建文件信息
             	if(index==1) {
             		 //文件第一个分片上传时记录到数据库
-                    UploadFile uploadFile = new UploadFile();
-                    uploadFile.setFileName(fileName);
+//                    UploadFile uploadFile = new UploadFile();
+//                    uploadFile.setFileName(fileName);
 //                    uploadFile.setFileSuffix(suffix);
 //                    uploadFile.setFileId(fileId);
-                    uploadFile.setFilePath(filePath);
-                    uploadFile.setFileSize(size);
-                    uploadFile.setFileStatus(1);
-                    uploadFile.setFileIndex(index);
-                    uploadFile.setFileTotal(total);
-                    uploadFile.setCreateTime(new Date());
-                    uploadFile.setDeviceName(deviceName);
-                    uploadFile.setSn(sn);
-                    redisService.set(sn+"_deviceLog",uploadFile);
+//                    uploadFile.setFilePath(filePath);
+//                    uploadFile.setFileSize(size);
+//                    uploadFile.setFileStatus(1);
+//                    uploadFile.setFileIndex(index);
+//                    uploadFile.setFileTotal(total);
+//                    uploadFile.setCreateTime(new Date());
+//                    uploadFile.setDeviceName(deviceName);
+//                    uploadFile.setSn(sn);
+//                    redisService.set(sn+"_deviceLog",uploadFile);
             	}
             	if(index>1 && index<total){
             	  //更新记录到数据库
-                  UploadFile uploadFile = new UploadFile();
-                  uploadFile.setFileName(fileName);
-//                  uploadFile.setFileSuffix(suffix);
-//                  uploadFile.setFileId(fileId);
-                  uploadFile.setFilePath(filePath);
-                  uploadFile.setFileSize(size);
-                  uploadFile.setFileStatus(1);
-                  uploadFile.setFileIndex(index);
-                  uploadFile.setFileTotal(total);
-                  uploadFile.setCreateTime(new Date());
-                  uploadFile.setDeviceName(deviceName);
-                  uploadFile.setSn(sn);
-                  uploadFile.setUpdateTime(new Date());
-                  redisService.set(sn+"_deviceLog",uploadFile);
+//                  UploadFile uploadFile = new UploadFile();
+//                  uploadFile.setFileName(fileName);
+////                  uploadFile.setFileSuffix(suffix);
+////                  uploadFile.setFileId(fileId);
+//                  uploadFile.setFilePath(filePath);
+//                  uploadFile.setFileSize(size);
+//                  uploadFile.setFileStatus(1);
+//                  uploadFile.setFileIndex(index);
+//                  uploadFile.setFileTotal(total);
+//                  uploadFile.setCreateTime(new Date());
+//                  uploadFile.setDeviceName(deviceName);
+//                  uploadFile.setSn(sn);
+//                  uploadFile.setUpdateTime(new Date());
+//                  redisService.set(sn+"_deviceLog",uploadFile);
             	}
                 return map;
             }
@@ -407,20 +412,20 @@ public class Log_tx_Service {
 		            }       
 		              outputStream.close();
 		                //修改FileRes记录为上传成功
-		              UploadFile uploadFile = new UploadFile();
-		              uploadFile.setFileName(fileName);
+//		              UploadFile uploadFile = new UploadFile();
+//		              uploadFile.setFileName(fileName);
 		//              uploadFile.setFileSuffix(suffix);
 		//              uploadFile.setFileId(fileId);
-		              uploadFile.setFilePath(filePath);
-		              uploadFile.setFileSize(size);
-		              uploadFile.setFileStatus(2);
-		              uploadFile.setFileIndex(index);
-		              uploadFile.setFileTotal(total);
-		              uploadFile.setCreateTime(new Date());
-		              uploadFile.setDeviceName(deviceName);
-		              uploadFile.setSn(sn);
-		              uploadFile.setUpdateTime(new Date());
-		              redisService.set(sn+"_deviceLog",uploadFile);
+//		              uploadFile.setFilePath(filePath);
+//		              uploadFile.setFileSize(size);
+//		              uploadFile.setFileStatus(2);
+//		              uploadFile.setFileIndex(index);
+//		              uploadFile.setFileTotal(total);
+//		              uploadFile.setCreateTime(new Date());
+//		              uploadFile.setDeviceName(deviceName);
+//		              uploadFile.setSn(sn);
+//		              uploadFile.setUpdateTime(new Date());
+//		              redisService.set(sn+"_deviceLog",uploadFile);
 		
 		              map=new HashMap<>();
 		//               map.put("fileId", fileId);
@@ -431,18 +436,18 @@ public class Log_tx_Service {
             }
         }
         	//保存日志信息
-        saveFile(fileName,deviceName,requestIp,remote,logType,fileType,sn,filePath);
+//        saveFile(fileName,deviceName,requestIp,remote,logType,fileType,sn,filePath);
         return map;
     }
 	public Map<String, Object> findByFiletxInfo(String sn) {
 		Map<String, Object> map=new HashMap<String,Object>();
-		UploadFile uploadFileQuery=(UploadFile) redisService.get(sn+"_deviceLog");
-		map.put("index", uploadFileQuery.getFileIndex());
+//		UploadFile uploadFileQuery=(UploadFile) redisService.get(sn+"_deviceLog");
+//		map.put("index", uploadFileQuery.getFileIndex());
 		return map;
 	}
-	public PackageInfo saveOtaFile(String fileName, String product, String version, String country, String sn,
+	public LogOtaUpgrade saveOtaFile(String fileName, String product, String version, String country, String sn,
 			String language, String filePath) {
-		PackageInfo packageInfo=new PackageInfo();
+		LogOtaUpgrade packageInfo=new LogOtaUpgrade();
 		packageInfo.setCreateTime(new Date());
 		packageInfo.setCountry(country);
 		packageInfo.setLanguage(language);
@@ -453,8 +458,45 @@ public class Log_tx_Service {
 		packageInfo.setVersion(version);
 		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(packageInfo);
 		String id=ElasticsearchUtil.addData(jsonObject, Esconstant.TX_INDEXNAME, Esconstant.TX_TYPE);
-		packageInfo.setId(id);
+//		packageInfo.setId(id);
 		return packageInfo;
 		
+	}
+	
+	/**
+	 * 查询
+	 * */
+	public LogFileInfo queryLogFileInfo(String sn) {
+		// TODO Auto-generated method stub
+		return logFileDao.queryLogFileInfo(sn);
+	}
+	public LogFileInfo saveFile(String fileName, String deviceName, int logType, int fileType, String sn,
+			String filePath, String fileLocalPath, long fileSize) {
+		LogFileInfo logFileInfo=new LogFileInfo();
+		logFileInfo.setDeviceName(deviceName);
+		logFileInfo.setSn(sn);
+		logFileInfo.setLogType(logType);
+		logFileInfo.setFileType(fileType);
+		logFileInfo.setFileName(fileName);
+		logFileInfo.setFilePath(filePath);
+		logFileInfo.setFileLocalPath(fileLocalPath);
+		logFileInfo.setFileSize(fileSize);
+		logFileInfo.setCreateTime(new Date());
+		
+//		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(tx);
+//		String id=ElasticsearchUtil.addData(jsonObject, Esconstant.TX_INDEXNAME, Esconstant.TX_TYPE);
+//		logFileInfo.setId(id);
+		//数据库保存文件信息
+		logFileDao.saveFile(logFileInfo);
+//		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(logFileInfo);
+//		//异步发送mq
+//		rabbitMqConfig.send(jsonObject.toJSONString());
+		return logFileInfo;
+		
+	}
+	public void sendFileMq(LogFileInfo logFileInfo) {
+		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(logFileInfo);
+		//异步发送mq
+		rabbitMqConfig.send(jsonObject.toJSONString());
 	}
 }

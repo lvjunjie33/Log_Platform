@@ -19,7 +19,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import snod.com.cn.entity.SysUserRole;
 
 /**
- * 用户与角色对应关系
+ * 用户与角色对应关系.
+ * @author lvjj
  */
 public interface SysUserRoleDao  extends BaseMapper<SysUserRole> {
 	
@@ -40,4 +41,7 @@ public interface SysUserRoleDao  extends BaseMapper<SysUserRole> {
 	 * @param roleIdList
 	 */
 	void insertUserAndUserRole(@Param("userId") Long userId, @Param("roleIdList") List<Long> roleIdList);
+
+	
+	void deleteByUserIds(@Param("userIds")Long[] userIds);
 }

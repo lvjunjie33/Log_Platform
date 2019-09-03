@@ -14,7 +14,7 @@ import snod.com.cn.security.smscode.SmsAuthenticationConfig;
 import snod.com.cn.security.smscode.SmsCodeFilter;
 
 /**
- * @author MrBird
+ * @author lvjj
  */
 @Configuration
 @EnableResourceServer

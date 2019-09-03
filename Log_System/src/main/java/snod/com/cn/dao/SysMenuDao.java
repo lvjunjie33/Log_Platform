@@ -1,7 +1,8 @@
-
 package snod.com.cn.dao;
 
 import java.util.List;
+
+import javax.validation.Valid;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -12,7 +13,7 @@ import snod.com.cn.entity.SysMenu;
  * 菜单管理
  * @author lvjj
  */
-public interface SysMenuDao extends BaseMapper<SysMenu>{
+public interface SysMenuDao{
 	
 	/**
 	 * 根据角色id获取菜单列表
@@ -53,5 +54,15 @@ public interface SysMenuDao extends BaseMapper<SysMenu>{
 	List<SysMenu> listChildrenMenuByParentId(Long parentId);
 
 	List<SysMenu> listMenuAndBtn();
+
+	SysMenu queryMenuInfo(Long menuId);
+
+	void insertMenu(@Valid SysMenu menu);
+
+	SysMenu queryMenuInfoByParentId(Long parentId);
+
+	void updateById(@Valid SysMenu menu);
+
+	void removeById(Long menuId);
 
 }

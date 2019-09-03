@@ -1,0 +1,54 @@
+server:
+  port: 8060
+  servlet:
+    session:
+      timeout: 3600s
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.113.15:3306/log_platform_api?allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    username: root
+    password: 3nodapp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 0
+      maximum-pool-size: 20
+      idle-timeout: 10000
+      auto-commit: true
+      connection-test-query: SELECT 1
+  cache: 
+    type: redis
+    redis:
+      cache-null-values: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  #session:
+    #store-type: redis
+#security:
+  #oauth2:
+    #client:
+      #client-id: 3nod_system
+      #client-secret: system@3nod
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+      
+# mybaits-plus配置
+mybatis-plus:
+  # MyBatis Mapper所对应的XML文件位置
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  global-config:
+    # 关闭MP3.0自带的banner
+    banner: false
+    db-config:
+      # 主键类型 0:数据库ID自增 1.未定义 2.用户输入 3 id_worker 4.uuid 5.id_worker字符串表示
+      id-type: AUTO
+      #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+      field-strategy: NOT_NULL
+      # 默认数据库表下划线命名
+      table-underline: true

@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,8 +21,9 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import snod.com.cn.config.OSSFileConfig;
-import snod.com.cn.entity.PackageInfo;
-import snod.com.cn.service.Ota_Package_Service;
+import snod.com.cn.entity.LogFileInfo;
+import snod.com.cn.entity.LogOtaUpgrade;
+import snod.com.cn.service.OtaPackageService;
 import snod.com.cn.utils.EcpStackTrace;
 import snod.com.cn.utils.FileUtil;
 import snod.com.cn.utils.ResultInfo;
@@ -34,10 +34,10 @@ import snod.com.cn.utils.VersionCheckUtil;
 @Api(tags= {"ota升级包接口"})
 @RestController
 @RequestMapping("/OtaUpdater")
-public class Ota_package_Controller {
-	private final static Logger logger = LoggerFactory.getLogger(Ota_package_Controller.class);
+public class OtapackageController {
+	private final static Logger logger = LoggerFactory.getLogger(OtapackageController.class);
 	@Autowired
-	private Ota_Package_Service otaPackageService;
+	private OtaPackageService otaPackageService;
 	@Autowired
 	private OSSFileConfig ossFileConfig;
 	/**
@@ -92,7 +92,7 @@ public class Ota_package_Controller {
 	public void getPackageInfo(HttpServletRequest request,HttpServletResponse response, String sn,String version,String product,String country,String language){
 
 		try {
- 			List<PackageInfo> list=otaPackageService.queryOtaPackage(sn);
+ 			List<LogOtaUpgrade> list=otaPackageService.queryOtaPackage(sn);
  			if(list!=null) {
  				if(list.size()>0) {
 //			    	List<PackageInfo> endTimeTempList = new ArrayList<PackageInfo>(list);
@@ -122,7 +122,7 @@ public class Ota_package_Controller {
 	@ApiOperation(notes="ota 升级包下载",value="ota 升级包下载",httpMethod="GET")
 	public ResultInfo downLoadPackage(HttpServletRequest request,HttpServletResponse response,String sn){
 		try {
-	    	List<PackageInfo> list=otaPackageService.queryOtaPackage(sn);
+	    	List<LogOtaUpgrade> list=otaPackageService.queryOtaPackage(sn);
 //	    	List<PackageInfo> endTimeTempList = new ArrayList<PackageInfo>(list);
 //	    	endTimeTempList=ListUtil.sortListPackageInfo(endTimeTempList);
 	    	InputStream inputStream = ossFileConfig.downLoadFile(list.get(0).getPackagePath());

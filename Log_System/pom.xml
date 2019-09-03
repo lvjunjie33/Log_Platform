@@ -22,7 +22,11 @@
 			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
 			<version>2.0.9.RELEASE</version>
 		</dependency>
-		</dependencies>
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-data-redis</artifactId>
+		</dependency>
+	</dependencies>
 	<build>
 		<finalName>Log_System</finalName>
 		<plugins>

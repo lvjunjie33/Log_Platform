@@ -34,16 +34,16 @@ public class SwaggerConfig {
      	 ParameterBuilder fileTypePar = new ParameterBuilder();
      	 ParameterBuilder logTypePar = new ParameterBuilder();
      	 ParameterBuilder deviceNamePar = new ParameterBuilder();
-     	 snPar.name("sn").description("sn").
+     	 snPar.name("sn").description("sn序列号").
      	 modelRef(new ModelRef("string")).parameterType("header").required(false).build();
      	 
-     	fileTypePar.name("fileType").description("语言").
+     	fileTypePar.name("fileType").description("文件类型(1,压缩包；2,文本文件；...)").
      	 modelRef(new ModelRef("string")).parameterType("header").required(false).build();
 
-     	logTypePar.name("logType").description("渠道").
+     	logTypePar.name("logType").description("日志类型(1,错误日志；2，操作日志，3，系统日志...)").
      	 modelRef(new ModelRef("string")).parameterType("header").required(false).build();
 
-     	deviceNamePar.name("deviceName").description("版本").
+     	deviceNamePar.name("deviceName").description("设备名称").
      	 modelRef(new ModelRef("int")).parameterType("header").required(false).build();
           
      	 pars.add(snPar.build());

@@ -34,10 +34,10 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import snod.com.cn.config.OSSFileConfig;
-import snod.com.cn.entity.LogtxInfo;
+import snod.com.cn.entity.LogFileInfo;
 import snod.com.cn.entity.vo.FileVo;
 import snod.com.cn.entity.vo.SearchVo;
-import snod.com.cn.service.Log_tx_Service;
+import snod.com.cn.service.LogFileService;
 import snod.com.cn.utils.EcpStackTrace;
 import snod.com.cn.utils.FileUtil;
 import snod.com.cn.utils.FtpUtil;
@@ -50,12 +50,12 @@ import snod.com.cn.utils.StringUtil;
 @Api(tags= {"腾讯日志接口"})
 @RestController
 @RequestMapping("/tx_log")
-public class Log_tx_Controller {
+public class LogFileController {
 	
-	private final static Logger logger = LoggerFactory.getLogger(Log_tx_Controller.class);
+	private final static Logger logger = LoggerFactory.getLogger(LogFileController.class);
 	
 	@Autowired
-	private Log_tx_Service logService;
+	private LogFileService logService;
 	
 	@Autowired
 	private OSSFileConfig ossFileConfig;
@@ -139,6 +139,7 @@ public class Log_tx_Controller {
 			String logType=request.getHeader("logType");
 			String fileType=request.getHeader("fileType");
 			String deviceName=request.getHeader("deviceName");
+			String logFilePath = request.getServletContext().getRealPath("/file/logFile");	
 			Map<String, MultipartFile> fileMap = new LinkedHashMap<>(0);
 		     if (request instanceof MultipartHttpServletRequest) {
 		          fileMap = ((MultipartHttpServletRequest) request).getFileMap();
@@ -152,17 +153,23 @@ public class Log_tx_Controller {
 			     }
 		     }
 		    MultipartFile uploadFile=fileMap.get("uploadFile");//会议记录文件
-			//IP
-			String requestIp=IPUtil.getIP(request);
-			//端口
-			int remote=request.getRemotePort();
 			Calendar date = Calendar.getInstance();
-		    String year = String.valueOf(date.get(Calendar.YEAR))+"/";
-	        String month = String.valueOf(date.get(Calendar.MONTH)+1)+"/";
-	        String FileName="device_log/"+deviceName+"/"+year+month+uploadFile.getOriginalFilename();
-	        logService.saveFile(uploadFile.getOriginalFilename(),deviceName,requestIp,remote,logTypeInt,fileTypeInt,sn,FileName);
+		    String year = String.valueOf(date.get(Calendar.YEAR));
+	        String month = String.valueOf(date.get(Calendar.MONTH)+1);
+	        String filePath="device_log/"+deviceName+"/"+year+"/"+month+"/"+uploadFile.getOriginalFilename();
+	        String fileLocalPath=logFilePath+"\\device_log\\"+deviceName+"\\"+year+"\\"+month+"\\";
+	        LogFileInfo logFileInfo=logService.saveFile(uploadFile.getOriginalFilename(),deviceName,logTypeInt,fileTypeInt,sn,filePath,fileLocalPath,uploadFile.getSize());
+	        //上传到服务器本地
+	        if(!new File(fileLocalPath).exists()){       
+				new File(fileLocalPath).mkdirs();    
+	        }
+	        File localFileContent = new File(fileLocalPath, uploadFile.getOriginalFilename());
+	        //写文件
+	        uploadFile.transferTo(localFileContent);
+	        //发送异步消息
+	        logService.sendFileMq(logFileInfo);
 	        //上传到文件服务器
-	        ossFileConfig.uploadFile(FileName, uploadFile.getInputStream());
+//	        ossFileConfig.uploadFile(FilePath, uploadFile.getInputStream());
 	        //上传文件本地-------------------------------------------------------------------------
 	        return ResultTools.result(ResultTools.ERROR_CODE_0, null,null);
 		}catch(Exception e) {
@@ -180,7 +187,8 @@ public class Log_tx_Controller {
 	 */
 	@RequestMapping("/logFileUpLoadHttpTest")
 	@ApiOperation(notes="上传日志文件测试接口(HTTP普通文件上传)",value="上传日志文件测试接口(HTTP普通文件上传)",httpMethod="POST")
-	public ResultInfo logFileUpLoadHttpTest(HttpServletRequest request
+	public ResultInfo logFileUpLoadHttpTest(HttpServletRequest request,
+			@ApiParam(value ="日志文件",required=true)MultipartFile content
 			){
 		try {
 			//接收头部参数
@@ -188,10 +196,11 @@ public class Log_tx_Controller {
 			String logType=request.getHeader("logType");
 			String fileType=request.getHeader("fileType");
 			String deviceName=request.getHeader("deviceName");
-			Map<String, MultipartFile> fileMap = new LinkedHashMap<>(0);
-		     if (request instanceof MultipartHttpServletRequest) {
-		          fileMap = ((MultipartHttpServletRequest) request).getFileMap();
-		      }
+			String logFilePath = request.getServletContext().getRealPath("/file/logFile");	
+//			Map<String, MultipartFile> fileMap = new LinkedHashMap<>(0);
+//		     if (request instanceof MultipartHttpServletRequest) {
+//		          fileMap = ((MultipartHttpServletRequest) request).getFileMap();
+//		      }
 			//IP
 			int logTypeInt = 0;
 		    int fileTypeInt = 0;
@@ -201,17 +210,25 @@ public class Log_tx_Controller {
 			    	 fileTypeInt=Integer.parseInt(fileType);
 			     }
 		     }
-			String requestIp=IPUtil.getIP(request);
-			//端口
-			int remote=request.getRemotePort();
-			MultipartFile content=fileMap.get("uploadFile");//会议记录文件
+//			MultipartFile content=fileMap.get("uploadFile");//会议记录文件
 			Calendar date = Calendar.getInstance();
-		    String year = String.valueOf(date.get(Calendar.YEAR))+"/";
-	        String month = String.valueOf(date.get(Calendar.MONTH)+1)+"/";
-	        String FileName="device_log/"+deviceName+"/"+year+month+content.getOriginalFilename();
-	        logService.saveFile(content.getOriginalFilename(),deviceName,requestIp,remote,logTypeInt,fileTypeInt,sn,FileName);
+		    String year = String.valueOf(date.get(Calendar.YEAR));
+	        String month = String.valueOf(date.get(Calendar.MONTH)+1);
+	        String filePath="device_log/"+deviceName+"/"+year+"/"+month+"/"+content.getOriginalFilename();
+	        String fileLocalPath=logFilePath+"\\device_log\\"+deviceName+"\\"+year+"\\"+month+"\\";
+	        LogFileInfo logFileInfo=logService.saveFile(content.getOriginalFilename(),deviceName,logTypeInt,fileTypeInt,sn,filePath,fileLocalPath,content.getSize());
+	        //上传到服务器本地
+	        
+	        if(!new File(fileLocalPath).exists()){       
+				new File(fileLocalPath).mkdirs();    
+	        }
+	        File localFileContent = new File(fileLocalPath, content.getOriginalFilename());
+	        //写文件
+	        content.transferTo(localFileContent);
+	        //发送异步消息
+	        logService.sendFileMq(logFileInfo);
 	        //上传到文件服务器
-	        ossFileConfig.uploadFile(FileName, content.getInputStream());
+//	        ossFileConfig.uploadFile(FilePath, content.getInputStream());
 	        return ResultTools.result(ResultTools.ERROR_CODE_0, null,null);
 		}catch(Exception e) {
 			logger.error(EcpStackTrace.getExceptionStackTrace(e));
@@ -245,10 +262,6 @@ public class Log_tx_Controller {
 			String logType=request.getHeader("logType");
 			String fileType=request.getHeader("fileType");
 			String deviceName=request.getHeader("deviceName");
-			//IP
-			String requestIp=IPUtil.getIP(request);
-			//端口
-			int remote=request.getRemotePort();
 			int logTypeInt = 0;
 		    int fileTypeInt = 0;
 		    if(logType!=null && fileType!=null) {
@@ -262,7 +275,7 @@ public class Log_tx_Controller {
 	        String month = String.valueOf(date.get(Calendar.MONTH)+1)+"/";
 	        String FilePath="/device_log/"+deviceName+"/"+year+month;
 	        String FileName=content.getOriginalFilename();
-	        logService.saveFile(FileName,deviceName,requestIp,remote,logTypeInt,fileTypeInt,sn,FilePath+FileName);
+	        logService.saveFileFtp(FileName,deviceName,logTypeInt,fileTypeInt,sn,FilePath+FileName,content.getSize());
 	        //FTP的方式上传到文件服务器
 	        FtpUtil.uploadToFtp(FileName, content.getInputStream(),FilePath);
 	        return ResultTools.result(ResultTools.ERROR_CODE_0, null,null);
@@ -285,17 +298,17 @@ public class Log_tx_Controller {
 	})
     public ResultInfo logFileDownLoadHttpOSSTest(HttpServletRequest request,HttpServletResponse response,String sn) throws IOException{
 		try{
-			Page<LogtxInfo> page=logService.queryLogFile(sn);
-	    	List<LogtxInfo> list=page.getContent();
-	    	List<LogtxInfo> endTimeTempList = new ArrayList<LogtxInfo>(list);
-	    	endTimeTempList=ListUtil.sortList(endTimeTempList);
-	        InputStream inputStream = ossFileConfig.downLoadFile(endTimeTempList.get(0).getLogFilePath());
+			LogFileInfo logFileInfo=logService.queryLogFileInfo(sn);
+//	    	List<LogFileInfo> list=page.getContent();
+//	    	List<LogFileInfo> endTimeTempList = new ArrayList<LogFileInfo>(list);
+//	    	endTimeTempList=ListUtil.sortList(endTimeTempList);
+	        InputStream inputStream = ossFileConfig.downLoadFile(logFileInfo.getFilePath());
 	        OutputStream outputStream = response.getOutputStream();
 	        byte[] btImg = FileUtil.readInputStream(inputStream);//得到二进制数据
 	        //指明为下载
 	        response.setContentType("application/x-download");     
 	        response.setContentLengthLong(btImg.length);
-	        response.addHeader("Content-Disposition", "attachment;fileName=" + endTimeTempList.get(0).getLogFileName());   // 设置文件名
+	        response.addHeader("Content-Disposition", "attachment;fileName=" + logFileInfo.getFileName());   // 设置文件名
 	        //把输入流copy到输出流
 	        IOUtils.copy(inputStream, outputStream);
 	        outputStream.flush();
@@ -320,11 +333,11 @@ public class Log_tx_Controller {
 	})
     public ResultInfo logFileDownLoadHttpTest(HttpServletRequest request,HttpServletResponse response,String sn) throws IOException{
 		try{
-			Page<LogtxInfo> page=logService.queryLogFile(sn);
-	    	List<LogtxInfo> list=page.getContent();
-	    	List<LogtxInfo> endTimeTempList = new ArrayList<LogtxInfo>(list);
-	    	endTimeTempList=ListUtil.sortList(endTimeTempList);
-	    	String []str=endTimeTempList.get(0).getLogFilePath().split("/");
+			LogFileInfo logFileInfo=logService.queryLogFileInfo(sn);
+//	    	List<LogFileInfo> list=page.getContent();
+//	    	List<LogFileInfo> endTimeTempList = new ArrayList<LogFileInfo>(list);
+//	    	endTimeTempList=ListUtil.sortList(endTimeTempList);
+	    	String []str=logFileInfo.getFilePath().split("/");
 	    	String folderStr="";
 	    	for(int i=0;i<str.length;i++) {
 	    		if(i==str.length-1) {
@@ -335,11 +348,11 @@ public class Log_tx_Controller {
 	    	String folder = request.
 	                getServletContext().getRealPath(folderStr);
 	        //jdk7新特性，可以直接写到try()括号里面，java会自动关闭
-	        InputStream inputStream = new FileInputStream(new File(folder,endTimeTempList.get(0).getLogFileName()));
+	        InputStream inputStream = new FileInputStream(new File(folder,logFileInfo.getFileName()));
 	        OutputStream outputStream = response.getOutputStream();
 	        //指明为下载
 	        response.setContentType("application/x-download");
-	        response.addHeader("Content-Disposition", "attachment;fileName=" + endTimeTempList.get(0).getLogFileName());   // 设置文件名
+	        response.addHeader("Content-Disposition", "attachment;fileName=" +logFileInfo.getFilePath());   // 设置文件名
 	        //把输入流copy到输出流
 	        IOUtils.copy(inputStream, outputStream);
 	        outputStream.flush();
@@ -368,16 +381,16 @@ public class Log_tx_Controller {
 	})
 	public ResultInfo logFileDownLoadFtpTest(HttpServletResponse response,String sn){
         try{
-        	Page<LogtxInfo> page=logService.queryLogFile(sn);
-        	List<LogtxInfo> list=page.getContent();
-        	List<LogtxInfo> endTimeTempList = new ArrayList<LogtxInfo>(list);
+        	Page<LogFileInfo> page=logService.queryLogFile(sn);
+        	List<LogFileInfo> list=page.getContent();
+        	List<LogFileInfo> endTimeTempList = new ArrayList<LogFileInfo>(list);
         	endTimeTempList=ListUtil.sortList(endTimeTempList);
             //jdk7新特性，可以直接写到try()括号里面，java会自动关闭
-            InputStream inputStream = FtpUtil.downloadFile(endTimeTempList.get(0).getLogFilePath());
+            InputStream inputStream = FtpUtil.downloadFile(endTimeTempList.get(0).getFilePath());
             OutputStream outputStream = response.getOutputStream();
             //指明为下载
             response.setContentType("application/x-download");
-            response.addHeader("Content-Disposition", "attachment;fileName=" + endTimeTempList.get(0).getLogFileName());   // 设置文件名
+            response.addHeader("Content-Disposition", "attachment;fileName=" + endTimeTempList.get(0).getFileName());   // 设置文件名
             //把输入流copy到输出流
             IOUtils.copy(inputStream, outputStream);
             outputStream.flush();
@@ -405,7 +418,7 @@ public class Log_tx_Controller {
 	public Map<String,Object> angularjsTest(@RequestBody SearchVo searchInfo){
 		Map<String,Object>result=new HashMap<String,Object>();
 		try {
- 			Page<LogtxInfo> page= logService.queryLogtx(searchInfo);
+ 			Page<LogFileInfo> page= logService.queryLogtx(searchInfo);
 			result.put("resultData",page.getContent());
 			result.put("total",page.getTotalElements());
 		}catch(Exception e) {

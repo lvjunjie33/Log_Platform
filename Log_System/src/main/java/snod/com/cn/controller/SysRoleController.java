@@ -30,7 +30,7 @@ import snod.com.cn.utils.SecurityUtils;
 
 /**
  * 角色管理
- * @author lgh
+ * @author lvjj
  */
 @RestController
 @RequestMapping("/sys/role")
@@ -88,7 +88,7 @@ public class SysRoleController{
 		return ResponseEntity.ok().build();
 	}
 	
-	/**
+	/**	
 	 * 修改角色
 	 */
 //	@SysLog("修改角色")

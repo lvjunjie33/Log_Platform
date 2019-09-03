@@ -8,5 +8,6 @@ public class Constant {
 	 //用户名
 	 public static final String PRINCIPAL="principal";
 	 
+	 public static final String QUEUE_LOG="log";
 
 }

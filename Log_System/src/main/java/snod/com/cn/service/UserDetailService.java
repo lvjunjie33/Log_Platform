@@ -14,6 +14,7 @@ import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import cn.hutool.core.util.StrUtil;
 import snod.com.cn.entity.SecurityUser;
@@ -27,13 +28,15 @@ public class UserDetailService implements UserDetailsService {
     private SysUserService sysUserService;
     @Autowired
     private SysMenuService sysMenuService;
-    
+    @Autowired
+    private PasswordEncoder passwordEncoder;
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {	
     	
         // 查询用户信息，这里没有设计账号表，用户表和账号公用同一张表，这里的username可以理解为账号名称，不是用户名称
         SysUser user = sysUserService.querySysUserInfo(username);
-//        user.setUserName(username);
+//    	SysUser user=new SysUser();
+//        user.setUsername(username);
 //        user.setPassword(this.passwordEncoder.encode("123456"));
         if(user==null) {
     		throw new UsernameNotFoundException("Username not found");

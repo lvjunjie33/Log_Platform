@@ -23,7 +23,9 @@ import snod.com.cn.security.handler.MyLogOutSuccessHandler;
 import snod.com.cn.security.smscode.SmsAuthenticationConfig;
 import snod.com.cn.security.smscode.SmsCodeFilter;
 import snod.com.cn.service.UserDetailService;
-
+/**
+ * @author lvjj
+ */
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {

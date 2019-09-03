@@ -2,6 +2,7 @@ package snod.com.cn.controller;
 
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import snod.com.cn.entity.vo.FileVo;
-import snod.com.cn.service.Log_tx_Service;
+import snod.com.cn.service.LogFileService;
 
 /**
- * Create by tianci
+ * Create by lvjj
  * 2019/1/10 15:41
  */
 @RestController
@@ -23,7 +24,7 @@ import snod.com.cn.service.Log_tx_Service;
 public class UploadFileController {
 
 	@Autowired
-	private Log_tx_Service logService;
+	private LogFileService logService;
 
 
     @GetMapping("/open")
@@ -34,8 +35,8 @@ public class UploadFileController {
     }
 
     @PostMapping("/isUpload")
-    public Map<String, Object> isUpload(@Valid FileVo form) {
-
+    public Map<String, Object> isUpload(@Valid FileVo form,HttpServletRequest request) {
+    	System.out.println(request.getSession().getId());
         return logService.findByFiletxInfo(form.getSn());
 
     }

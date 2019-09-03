@@ -3,7 +3,9 @@ package snod.com.cn.security.code;
 import java.awt.image.BufferedImage;
 import java.io.Serializable;
 import java.time.LocalDateTime;
-
+/**
+ * @author lvjj
+ */
 public class ImageCode implements Serializable{
 
     /**

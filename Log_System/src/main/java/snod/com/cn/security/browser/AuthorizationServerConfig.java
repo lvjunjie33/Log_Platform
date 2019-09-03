@@ -17,7 +17,7 @@ import snod.com.cn.security.token.CustomizeRedisTokenStore;
 import snod.com.cn.service.UserDetailService;
 
 /**
- * @author MrBird
+ * @author lvjj
  */
 @Configuration
 @EnableAuthorizationServer

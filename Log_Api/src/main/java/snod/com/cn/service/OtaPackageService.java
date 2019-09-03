@@ -16,14 +16,15 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
 import snod.com.cn.constant.Esconstant;
-import snod.com.cn.entity.PackageInfo;
+import snod.com.cn.entity.LogFileInfo;
+import snod.com.cn.entity.LogOtaUpgrade;
 import snod.com.cn.redis.RedisService;
 //import snod.com.cn.service.repository.Ota_package_Repository;
 import snod.com.cn.utils.elasticsearch.ElasticsearchUtil;
 import snod.com.cn.utils.elasticsearch.EsPage;
 
 @Service
-public class Ota_Package_Service {
+public class OtaPackageService {
 	
 
 //	@Autowired
@@ -31,16 +32,7 @@ public class Ota_Package_Service {
 	@Autowired
 	private RedisService redisService;
 	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	public List<PackageInfo> queryOtaPackage(String sn) throws ParseException {
+	public List<LogOtaUpgrade> queryOtaPackage(String sn) throws ParseException {
 		BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
 		  // 构建查询条件
 //	    NativeSearchQueryBuilder macQueryBuilder = new NativeSearchQueryBuilder();
@@ -80,20 +72,20 @@ public class Ota_Package_Service {
 //	    Page<PackageInfo> items =  this.OtaPackageRepository.search(macQueryBuilder.build());
 	    // 总条数
 //	    long total = items.getTotalElements();
-		 List<PackageInfo> listPackageInfo=new ArrayList<PackageInfo>();
+		 List<LogOtaUpgrade> listPackageInfo=new ArrayList<LogOtaUpgrade>();
 		 List<Map<String, Object>> list= esPage.getRecordList();
 		 for (Map<String, Object> map : list) {
 			 JSONObject jsonObject=(JSONObject) JSONObject.toJSON(map);
-			 listPackageInfo.add(JSON.toJavaObject(jsonObject,PackageInfo.class));
+			 listPackageInfo.add(JSON.toJavaObject(jsonObject,LogOtaUpgrade.class));
 		}
 		 
 //		 System.out.println(list.size());
 	return listPackageInfo;
 
 	}
-	public PackageInfo saveOtaFile(String fileName, String product, String version, String country, String sn,
+	public LogOtaUpgrade saveOtaFile(String fileName, String product, String version, String country, String sn,
 			String language, String filePath, long packageSize) {
-		PackageInfo packageInfo=new PackageInfo();
+		LogOtaUpgrade packageInfo=new LogOtaUpgrade();
 		packageInfo.setCreateTime(new Date());
 		packageInfo.setCountry(country);
 		packageInfo.setLanguage(language);
@@ -105,7 +97,7 @@ public class Ota_Package_Service {
 		packageInfo.setPackeageSize(packageSize);
 		JSONObject jsonObject = (JSONObject) JSONObject.toJSON(packageInfo);
 		String id=ElasticsearchUtil.addData(jsonObject, Esconstant.OTA_INDEXNAME, Esconstant.OTA_TYPE);
-		packageInfo.setId(id);
+//		packageInfo.setId(id);
 		return packageInfo;
 		
 	}

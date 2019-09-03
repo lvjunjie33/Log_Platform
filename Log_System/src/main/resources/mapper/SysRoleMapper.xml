@@ -35,10 +35,10 @@
 	</select>
 	
 	
-	<select id="queryRoleListAll" resultType="Long">
+	<select id="queryRoleListAll" resultType="snod.com.cn.entity.SysRole">
 		select * from tz_sys_role
 	</select>
-	<select id="getroleInfoById" resultType="Long">
+	<select id="getroleInfoById" resultType="snod.com.cn.entity.SysRole">
 		select * from tz_sys_role where role_id = #{roleId}
 	</select>
 	<insert id="inserRoleInfo" useGeneratedKeys="true" keyProperty="roleId" keyColumn="role_id" parameterType="snod.com.cn.entity.SysRole">
@@ -51,14 +51,16 @@
 		)
 	</insert>
 	<update id="updateRoleInfo" parameterType="snod.com.cn.entity.SysRole">
-		update tz_sys_role set 
-		 <if test="roleName!= null ">
-       		role_name = #{roleName},
-     	 </if>
-     	  <if test="remark null ">
-       		remark = #{remark},
-     	 </if>
-     	 
+		update tz_sys_role
+		<set>
+			 <if test="roleName!= null ">
+	       		role_name = #{roleName},
+	     	 </if>
+	     	  <if test="remark!= null ">
+	       		remark = #{remark}
+	     	 </if>
+     	 </set>
 		WHERE role_id = #{roleId}
 	</update>
+
 </mapper>
