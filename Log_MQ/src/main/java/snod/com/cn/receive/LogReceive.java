@@ -166,6 +166,13 @@ public class LogReceive {
 					logger.info("--------------解压文件------------------");
 					List<File> fileList=null;
 					/**
+					 * 压缩包不存在直接退出，手动确认该条消息
+					 * */
+					if(!new File(logFileInfo.getFileLocalPath()+"\\"+logFileInfo.getFileName()).exists()) {
+						channel.basicAck(envelope.getDeliveryTag(), false);
+						return;
+					}
+					/**
 					 * 目前只支持zip
 					 * 原因rar压缩算法是不开源的，导致这块资料相对较少，对高版本没有兼容性；
 					         为避免不必要的如此文件解压异常，实际项目中若需要上传文件执行导入等相关功能时，可以强制限定文件格式为非rar格式，

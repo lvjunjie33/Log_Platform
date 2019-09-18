@@ -22,10 +22,20 @@ public class ElasticsearchConfig {
     private static final Logger LOGGER = LoggerFactory.getLogger(ElasticsearchConfig.class);
 
     /**
-     * elk集群地址
+     * elk集群地址node-1
      */
-    @Value("${spring.data.elasticsearch.ip}")
-    private String hostName;
+    @Value("${spring.data.elasticsearch.node-1-ip}")
+    private String nodeIpOne;
+    /**
+     * elk集群地址node-2
+     */
+    @Value("${spring.data.elasticsearch.node-2-ip}")
+    private String nodeIpTwo;
+    /**
+     * elk集群地址node-3
+     */
+    @Value("${spring.data.elasticsearch.node-3-ip}")
+    private String nodeIpThree;
 
     /**
      * 端口
@@ -63,8 +73,10 @@ public class ElasticsearchConfig {
                     .build();
             //配置信息Settings自定义
             transportClient = new PreBuiltTransportClient(esSetting);
-            TransportAddress transportAddress = new TransportAddress(InetAddress.getByName(hostName), Integer.valueOf(port));
-            transportClient.addTransportAddresses(transportAddress);
+            TransportAddress transportAddressOne = new TransportAddress(InetAddress.getByName(nodeIpOne), Integer.valueOf(port));
+            TransportAddress transportAddressTwo = new TransportAddress(InetAddress.getByName(nodeIpTwo), Integer.valueOf(port));
+            TransportAddress transportAddressThree = new TransportAddress(InetAddress.getByName(nodeIpThree), Integer.valueOf(port));
+            transportClient.addTransportAddresses(transportAddressOne,transportAddressTwo,transportAddressThree);
         } catch (Exception e) {
             LOGGER.error("elasticsearch TransportClient create error!!", e);
         }

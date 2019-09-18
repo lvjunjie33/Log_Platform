@@ -42,7 +42,7 @@ public class UserDetailService implements UserDetailsService {
     		throw new UsernameNotFoundException("Username not found");
       	}
         // 输出加密后的密码
-        System.out.println(user.getPassword());
+        System.out.println("123456加密后的密码---->"+this.passwordEncoder.encode("123456"));
         Collection<? extends GrantedAuthority> authorities
 				= AuthorityUtils.createAuthorityList(getUserPermissions(user.getUserId()).toArray(new String[0]));
         return new SecurityUser(user.getUserId(),user.getShopId(),username, user.getPassword(), user.isEnabled(),

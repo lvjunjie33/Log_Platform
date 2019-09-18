@@ -91,11 +91,11 @@ public class LogFileService {
 //	}
 	public Page<LogFileInfo> queryLogtx(SearchVo searchInfo) throws ParseException {
 		 BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
-		 boolQuery.must(QueryBuilders.matchQuery("deviceName", searchInfo.getParam()))
-				.must(QueryBuilders.matchQuery("mac", searchInfo.getParam()))	
-				.must(QueryBuilders.matchQuery("sn", searchInfo.getParam()))
-				.must(QueryBuilders.wildcardQuery("logFileName", "*"+searchInfo.getParam()+"*"))
-				.must(QueryBuilders.matchQuery("logFilePath", searchInfo.getParam()));
+		 boolQuery.should(QueryBuilders.matchQuery("deviceName", searchInfo.getParam()))
+				.should(QueryBuilders.matchQuery("mac", searchInfo.getParam()))
+				.should(QueryBuilders.matchQuery("sn", searchInfo.getParam()))
+				.should(QueryBuilders.wildcardQuery("fileName", "*"+searchInfo.getParam()+"*"))
+				.should(QueryBuilders.matchQuery("filePath", searchInfo.getParam()));
 		 EsPage esPage=ElasticsearchUtil.searchDataPage(Esconstant.TX_INDEXNAME, Esconstant.TX_TYPE, 
 				searchInfo.getPageIndex()-1, searchInfo.getPageSize(), 
 				boolQuery, null, null, null);

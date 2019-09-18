@@ -1,6 +1,5 @@
 package snod.com.cn.controller;
 
-import java.security.Principal;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -8,23 +7,10 @@ import java.util.Objects;
 
 import javax.validation.Valid;
 
-import cn.hutool.core.map.MapUtil;
-import lombok.AllArgsConstructor;
-import snod.com.cn.common.UnauthorizedExceptionBase;
-import snod.com.cn.constant.Constant;
-import snod.com.cn.constant.MenuType;
-import snod.com.cn.entity.SecurityUser;
-import snod.com.cn.entity.SysMenu;
-import snod.com.cn.service.SysMenuService;
-import snod.com.cn.utils.SecurityUtils;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -34,10 +20,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
+import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;
 import io.swagger.annotations.ApiOperation;
+import snod.com.cn.common.UnauthorizedExceptionBase;
+import snod.com.cn.constant.Constant;
+import snod.com.cn.constant.MenuType;
+import snod.com.cn.entity.SysMenu;
+import snod.com.cn.service.SysMenuService;
+import snod.com.cn.utils.SecurityUtils;
 
 /**
  * 系统菜单

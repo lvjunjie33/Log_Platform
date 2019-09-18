@@ -26,6 +26,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.alibaba.fastjson.JSONObject;
 
+import cn.hutool.core.io.FileUtil;
 import snod.com.cn.config.RabbitMqConfig;
 import snod.com.cn.constant.Constant;
 import snod.com.cn.constant.Esconstant;
@@ -73,7 +74,14 @@ public class LogFileService {
 		BufferedReader readerlineContent=null;
 		for(File f:fileList) {
 			fin=new FileInputStream(f);
-			is=new InputStreamReader(fin,EncodingDetect.getJavaEncode(f));
+			//文件不能为空
+			if(!FileUtil.isEmpty(f)) {
+				//根据文件内容编码格式设置解压后文件的编码格式
+				is=new InputStreamReader(fin,EncodingDetect.getJavaEncode(f));
+			}else {
+				//文件为空，默认UTF-8编码格式
+				is=new InputStreamReader(fin,"UTF-8");
+			}
 			StringBuilder content = new StringBuilder();
 			readerlineContent=new BufferedReader(is);
 		    String lineContent="";
