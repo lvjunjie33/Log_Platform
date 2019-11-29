@@ -67,7 +67,7 @@ public class OtapackageController {
 	        long packageSize=content.getSize();
 	        otaPackageService.saveOtaFile(fileName,product,version,country,sn,language,filePath,packageSize);
 	        //上传到文件服务器
-	    	ossFileConfig.uploadFile(filePath, content.getInputStream());
+//	    	ossFileConfig.uploadFile(filePath, content.getInputStream());
 	        return ResultTools.result(ResultTools.ERROR_CODE_0, null,null);
 		}catch(Exception e) {
 			logger.error(EcpStackTrace.getExceptionStackTrace(e));
@@ -143,5 +143,22 @@ public class OtapackageController {
 	       	logger.error(EcpStackTrace.getExceptionStackTrace(e));
        		return ResultTools.result(ResultTools.ERROR_CODE_404, EcpStackTrace.getExceptionStackTrace(e), null);
         }
+	}
+	
+	/**
+	 * Jersey测试
+	 */
+	@RequestMapping("/jerseyTest")
+	@ApiOperation(notes="ota 获取升级包信息",value="ota 获取升级包信息",httpMethod="POST")
+	 
+	@ApiImplicitParams({
+		@ApiImplicitParam(name="sn",value="sn",paramType="query",dataType="string",required=true),
+		@ApiImplicitParam(name="version",value="版本号",paramType="query",dataType="string",required=true),
+		@ApiImplicitParam(name="product",value="产品名称",paramType="query",dataType="string",required=true),
+		@ApiImplicitParam(name="country",value="国家",paramType="query",dataType="string",required=true),
+		@ApiImplicitParam(name="language",value="语言",paramType="query",dataType="string",required=true),
+	})
+	public ResultInfo jerseyTest(String sn,String version,String product,String country,String language){
+			return ResultTools.result(ResultTools.ERROR_CODE_0, null,null);
 	}
 }

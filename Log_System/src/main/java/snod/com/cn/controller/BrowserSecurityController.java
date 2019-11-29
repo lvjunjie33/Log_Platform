@@ -67,4 +67,12 @@ public class BrowserSecurityController {
     public String authenticationTests() {
         return "您拥有test权限，可以查看";
     }
+    
+    public static void main(String[] args) {
+		String str="123456";
+		
+    	System.out.println(str.replaceAll("(\\d{2})", ",$1"));
+    	  String strs="China|||||America::::::England&&&&&&&Mexica";
+          System.out.println(strs.replaceAll("(.)\\1+","$1"));
+	}
 }

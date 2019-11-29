@@ -74,9 +74,10 @@ public class ElasticsearchConfig {
             //配置信息Settings自定义
             transportClient = new PreBuiltTransportClient(esSetting);
             TransportAddress transportAddressOne = new TransportAddress(InetAddress.getByName(nodeIpOne), Integer.valueOf(port));
-            TransportAddress transportAddressTwo = new TransportAddress(InetAddress.getByName(nodeIpTwo), Integer.valueOf(port));
-            TransportAddress transportAddressThree = new TransportAddress(InetAddress.getByName(nodeIpThree), Integer.valueOf(port));
-            transportClient.addTransportAddresses(transportAddressOne,transportAddressTwo,transportAddressThree);
+//            TransportAddress transportAddressTwo = new TransportAddress(InetAddress.getByName(nodeIpTwo), Integer.valueOf(port));
+//            TransportAddress transportAddressThree = new TransportAddress(InetAddress.getByName(nodeIpThree), Integer.valueOf(port));
+//            transportClient.addTransportAddresses(transportAddressOne,transportAddressTwo,transportAddressThree);
+            transportClient.addTransportAddress(transportAddressOne);
         } catch (Exception e) {
             LOGGER.error("elasticsearch TransportClient create error!!", e);
         }

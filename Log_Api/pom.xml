@@ -24,6 +24,11 @@
 		    <artifactId>swagger-bootstrap-ui</artifactId>
 		    <version>1.9.6</version>
 		</dependency>
+		<!-- JerseyClient -->
+		<dependency>
+     		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-jersey</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>Log_Api</finalName>

@@ -10,6 +10,7 @@
   	<module>Log_Api</module>
   	<module>Log_MQ</module>
   	<module>Log_Quartz</module>
+    <module>Log_JPA</module>
   </modules>
   
   <parent>
