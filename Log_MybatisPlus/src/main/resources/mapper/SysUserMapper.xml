@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="snod.com.cn.dao.SysUserDao">
+
+	<select id="querySysUserInfo"
+		resultType="snod.com.cn.entity.SysUser">
+		select * from tz_sys_user where username = #{username}
+	</select>
+
+	<select id="queryAllPerms"
+		resultType="String">
+		select m.perms from tz_sys_user_role ur
+		LEFT JOIN tz_sys_role_menu rm on ur.role_id = rm.role_id
+		LEFT JOIN tz_sys_menu m on rm.menu_id = m.menu_id
+		where ur.user_id = #{userId}
+	</select>
+	<select id="getSysUserById"
+		resultType="snod.com.cn.entity.SysUser">
+		select * from tz_sys_user where user_id = #{userId}
+	</select>
+
+	<select id="queryList" resultType="snod.com.cn.entity.SysUser">
+		select * from tz_sys_user
+		<where>
+			<if test="username!= null ">
+				username = #{username}
+			</if>
+		</where>
+		limit #{current},#{size}
+	</select>
+
+	<select id="queryCountList"
+		resultType="Long">
+		select count(*) from tz_sys_user
+		<where>
+			<if test="username!= null ">
+				username = #{username}
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectByUsername" resultType="snod.com.cn.entity.SysUser">
+		select * from tz_sys_user where username = #{username}
+	</select>
+	
+	
+	<update id="updateUserAndUserRole" parameterType="snod.com.cn.entity.SysUser">
+		update tz_sys_user
+		<set> 
+			 <if test="username!= null ">
+	       		username = #{username},
+	     	 </if>
+	     	  <if test="email!= null ">
+	       		email = #{email},
+	     	 </if>
+	     	  <if test="mobile!= null ">
+	       		mobile = #{mobile},
+	     	 </if>
+	     	  <if test="password!= null ">
+	       		password = #{newPassword},
+	     	 </if>
+     	 </set>
+     	 <where>
+     	 	user_id=#{userId}
+     	 </where>
+	</update>
+	<update id="updatePasswordByUserId">
+		update tz_sys_user set 
+		 <if test="newPassword!= null ">
+       		password = #{newPassword}
+     	 </if>
+     	 <where>
+     	 	user_id=#{userId}
+     	 </where>
+	</update>
+	<insert id="saveUserAndUserRole" useGeneratedKeys="true" keyProperty="userId" keyColumn="user_id" >
+	
+	insert into tz_sys_user (
+		user_id,
+		username,
+		password,
+		email,
+		mobile,
+		status,
+		create_user_id,
+		create_time,
+		shop_id
+	) 
+	values(
+		#{userId},
+		#{username},
+		#{password},
+		#{email},
+		#{mobile},
+		#{status},
+		#{createUserId},
+		#{createTime},
+		#{shopId}
+		)
+	</insert>
+	<delete id="deleteBatch">
+		delete from tz_sys_user where user_id in 
+  		<foreach collection="userIds" item="userId" index="no" open="("  
+            separator="," close=")">  
+            #{userId}  
+        </foreach>
+        and shop_id = #{shopId}
+	</delete>
+	<!--查询用户的所有菜单 -->
+	<!-- <select id="listMenuByUserId" resultType="com.yami.shop.sys.model.SysMenu"> -->
+	<!-- SELECT DISTINCT m.menu_id AS menu_id,m.parent_id,m.name,url,m.type,m.icon,m.order_num 
+		FROM tz_sys_user_role ur -->
+	<!-- LEFT JOIN tz_sys_role_menu rm ON ur.role_id = rm.role_id LEFT JOIN 
+		tz_sys_menu m ON m.`menu_id` = rm.`menu_id` -->
+	<!-- WHERE ur.user_id = #{userId} and m.type != 2 order by order_num -->
+	<!-- </select> -->
+	<!-- 查询所有菜单 -->
+	<!-- <select id="listMenu" resultType="com.yami.shop.sys.model.SysMenu"> -->
+	<!-- select * from tz_sys_menu where `type` != 2 order by order_num -->
+	<!-- </select> -->
+
+	<!-- <select id="listSimpleMenuNoButton" resultType="com.yami.shop.sys.model.SysMenu"> -->
+	<!-- select menu_id ,parent_id ,`name` from tz_sys_menu where `type` != 
+		2 order by order_num -->
+	<!-- </select> -->
+
+	<!-- <select id="listRootMenu" resultType="com.yami.shop.sys.model.SysMenu"> -->
+	<!-- select menu_id,`name` from tz_sys_menu where `type` = 0 -->
+	<!-- </select> -->
+
+	<!-- <select id="listChildrenMenuByParentId" resultType="com.yami.shop.sys.model.SysMenu"> -->
+	<!-- select menu_id,`name` from tz_sys_menu where parent_id = #{parentId} -->
+	<!-- </select> -->
+
+	<!-- <select id="listMenuAndBtn" resultType="com.yami.shop.sys.model.SysMenu"> -->
+	<!-- select * from tz_sys_menu order by order_num -->
+	<!-- </select> -->
+</mapper>

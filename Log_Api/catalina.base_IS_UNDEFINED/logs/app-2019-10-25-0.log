@@ -1,0 +1,4 @@
+2019-10-25 15:33:08,514 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 27328 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-10-25 15:33:08,517 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-10-25 15:33:08,518 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-10-25 15:33:12,464 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。

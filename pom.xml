@@ -11,6 +11,7 @@
   	<module>Log_MQ</module>
   	<module>Log_Quartz</module>
     <module>Log_JPA</module>
+    <module>Log_MybatisPlus</module>
   </modules>
   
   <parent>

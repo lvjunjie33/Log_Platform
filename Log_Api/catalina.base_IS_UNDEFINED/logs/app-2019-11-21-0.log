@@ -1,0 +1,534 @@
+2019-11-21 09:17:50,961 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 6148 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 09:17:50,972 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 09:17:50,973 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 09:17:56,368 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 09:18:23,566 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 33.408 seconds (JVM running for 34.586)
+2019-11-21 09:21:01,293 ERROR (OtapackageJersey.java:64)- java.lang.NullPointerException
+	at snod.com.cn.service.OtaPackageService.queryOtaPackage(OtaPackageService.java:76)
+	at snod.com.cn.controller.OtapackageJersey.getPackageInfo(OtapackageJersey.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:76)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$$Lambda$1707/273681843.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:148)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:191)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:183)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:103)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:493)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:415)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:104)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:277)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:370)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:389)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:342)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:229)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-11-21 10:38:20,351 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 2128 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 10:38:20,357 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 10:38:20,358 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 10:38:24,879 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 10:38:51,072 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 31.283 seconds (JVM running for 32.021)
+2019-11-21 10:44:32,196 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 11924 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 10:44:32,203 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 10:44:32,204 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 10:44:37,005 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 10:45:01,582 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12192 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 10:45:01,587 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 10:45:01,588 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 10:45:05,961 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 10:45:31,961 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 30.937 seconds (JVM running for 31.674)
+2019-11-21 10:46:24,896 ERROR (OtapackageJersey.java:82)- java.lang.NullPointerException
+	at snod.com.cn.service.OtaPackageService.queryOtaPackage(OtaPackageService.java:76)
+	at snod.com.cn.controller.OtapackageJersey.getPackageInfo(OtapackageJersey.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:76)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$$Lambda$1707/1319374446.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:148)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:191)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:183)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:103)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:493)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:415)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:104)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:277)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:370)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:389)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:342)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:229)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-11-21 11:08:52,124 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 640 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:08:52,125 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:08:52,126 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:09:00,213 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 13212 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:09:00,216 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:09:00,217 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:09:04,033 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:09:29,310 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 29.572 seconds (JVM running for 30.107)
+2019-11-21 11:18:33,629 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12296 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:18:33,634 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:18:33,635 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:18:38,134 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:19:04,477 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 31.422 seconds (JVM running for 32.177)
+2019-11-21 11:22:15,090 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 1292 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:22:15,123 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:22:15,124 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:22:19,569 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:22:45,985 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 31.468 seconds (JVM running for 32.208)
+2019-11-21 11:23:36,293 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 4060 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:23:36,298 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:23:36,299 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:23:41,077 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:24:07,484 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 32.013 seconds (JVM running for 32.801)
+2019-11-21 11:27:00,564 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 1660 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:27:00,569 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:27:00,569 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:27:05,176 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:27:31,311 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 31.307 seconds (JVM running for 32.051)
+2019-11-21 11:30:13,060 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 12360 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:30:13,064 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:30:13,065 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:30:17,545 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:30:43,754 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 31.264 seconds (JVM running for 32.002)
+2019-11-21 11:37:15,399 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 11268 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 11:37:15,403 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 11:37:15,404 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 11:37:19,781 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 11:37:24,769 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 9.927 seconds (JVM running for 10.673)
+2019-11-21 14:13:47,804 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 18168 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 14:13:47,811 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 14:13:47,812 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 14:13:52,602 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 14:13:57,968 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.886 seconds (JVM running for 11.64)
+2019-11-21 16:21:17,566 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 22376 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 16:21:17,572 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 16:21:17,573 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 16:21:22,163 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 16:21:27,743 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.746 seconds (JVM running for 11.518)
+2019-11-21 16:50:08,644 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 22056 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 16:50:08,646 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 16:50:08,647 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 16:50:12,384 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 16:50:16,882 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 22732 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 16:50:16,888 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 16:50:16,889 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 16:50:21,600 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 16:50:27,074 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.782 seconds (JVM running for 11.553)
+2019-11-21 17:21:40,763 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 23412 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 17:21:40,770 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 17:21:40,770 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 17:21:45,384 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 17:21:50,983 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.812 seconds (JVM running for 11.592)
+2019-11-21 17:29:30,215 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 24320 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 17:29:30,250 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 17:29:30,251 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 17:29:34,789 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 17:29:40,379 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.743 seconds (JVM running for 11.522)
+2019-11-21 17:32:22,906 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 4688 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 17:32:22,914 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 17:32:22,915 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 17:32:27,509 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 17:32:33,171 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.874 seconds (JVM running for 11.694)
+2019-11-21 17:45:16,835 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 22548 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 17:45:16,840 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 17:45:16,841 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 17:45:21,290 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 17:45:26,796 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.545 seconds (JVM running for 11.339)
+2019-11-21 17:54:22,857 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 11312 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 17:54:22,866 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 17:54:22,867 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 17:54:27,427 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 17:54:32,960 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.906 seconds (JVM running for 11.735)
+2019-11-21 17:55:07,615 INFO (ElasticsearchUtil.java:134)- addData response status:201,id:1CDB9040C0A445E1AFD50E929367DC10
+2019-11-21 17:55:35,374 ERROR (OtapackageController.java:73)- UnavailableShardsException[[ota_logs][2] primary shard is not active Timeout: [1m], request: [BulkShardRequest [[ota_logs][2]] containing [index {[ota_logs][ota][764BCDA2719C43C4B65070721BC86CD8], source[{"packagePath":"ota/3NOD-L1/2019/11/docker.docx","country":"US","product":"3NOD-L1","createTime":"2019-11-21T09:54:35.204Z","language":"en","packeageSize":17018,"id":null,"packageName":"docker.docx","sn":"1122232425268812","version":"2.0.0"}]}]]]
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase.retryBecauseUnavailable(TransportReplicationAction.java:927)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase.retryIfUnavailable(TransportReplicationAction.java:773)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase.doRun(TransportReplicationAction.java:726)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase$2.onTimeout(TransportReplicationAction.java:887)
+	at org.elasticsearch.cluster.ClusterStateObserver$ContextPreservingListener.onTimeout(ClusterStateObserver.java:317)
+	at org.elasticsearch.cluster.ClusterStateObserver$ObserverClusterStateListener.onTimeout(ClusterStateObserver.java:244)
+	at org.elasticsearch.cluster.service.ClusterApplierService$NotifyTimeout.run(ClusterApplierService.java:573)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:624)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-21 17:55:39,981 INFO (ElasticsearchUtil.java:290)- 
+{"from":0,"size":1,"query":{"bool":{"must":[{"match":{"sn":{"query":"1122232425268812","operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions":true,"lenient":false,"zero_terms_query":"NONE","auto_generate_synonyms_phrase_query":true,"boost":1.0}}},{"range":{"createTime":{"from":null,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"explain":true,"sort":[{"createTime":{"order":"desc"}}]}
+2019-11-21 17:55:40,057 DEBUG (ElasticsearchUtil.java:298)- 共查询到[3]条数据,处理数据条数[1]
+2019-11-21 17:56:36,843 INFO (ElasticsearchUtil.java:290)- 
+{"from":0,"size":1,"query":{"bool":{"must":[{"match":{"sn":{"query":"1122232425268812","operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions":true,"lenient":false,"zero_terms_query":"NONE","auto_generate_synonyms_phrase_query":true,"boost":1.0}}},{"range":{"createTime":{"from":null,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"explain":true,"sort":[{"createTime":{"order":"desc"}}]}
+2019-11-21 17:56:36,851 DEBUG (ElasticsearchUtil.java:298)- 共查询到[3]条数据,处理数据条数[1]
+2019-11-21 18:03:30,447 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 24548 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:03:30,453 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:03:30,454 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:03:35,182 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:03:40,679 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.805 seconds (JVM running for 11.603)
+2019-11-21 18:03:53,452 INFO (ElasticsearchUtil.java:290)- 
+{"from":0,"size":1,"query":{"bool":{"must":[{"match":{"sn":{"query":"1122232425268812","operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions":true,"lenient":false,"zero_terms_query":"NONE","auto_generate_synonyms_phrase_query":true,"boost":1.0}}},{"range":{"createTime":{"from":null,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"explain":true,"sort":[{"createTime":{"order":"desc"}}]}
+2019-11-21 18:03:53,523 DEBUG (ElasticsearchUtil.java:298)- 共查询到[3]条数据,处理数据条数[1]
+2019-11-21 18:04:17,757 INFO (ElasticsearchUtil.java:290)- 
+{"from":0,"size":1,"query":{"bool":{"must":[{"match":{"sn":{"query":"1122232425268812","operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions":true,"lenient":false,"zero_terms_query":"NONE","auto_generate_synonyms_phrase_query":true,"boost":1.0}}},{"range":{"createTime":{"from":null,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"explain":true,"sort":[{"createTime":{"order":"desc"}}]}
+2019-11-21 18:04:17,766 DEBUG (ElasticsearchUtil.java:298)- 共查询到[3]条数据,处理数据条数[1]
+2019-11-21 18:06:08,811 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 21856 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:06:08,820 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:06:08,820 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:06:13,344 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:06:19,007 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.763 seconds (JVM running for 11.527)
+2019-11-21 18:06:45,375 INFO (ElasticsearchUtil.java:290)- 
+{"from":0,"size":1,"query":{"bool":{"must":[{"match":{"sn":{"query":"1122232425268812","operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions":true,"lenient":false,"zero_terms_query":"NONE","auto_generate_synonyms_phrase_query":true,"boost":1.0}}},{"range":{"createTime":{"from":null,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"explain":true,"sort":[{"createTime":{"order":"desc"}}]}
+2019-11-21 18:06:45,453 DEBUG (ElasticsearchUtil.java:298)- 共查询到[3]条数据,处理数据条数[1]
+2019-11-21 18:07:56,928 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 25240 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:07:56,935 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:07:56,936 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:08:01,684 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:08:07,794 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 11.492 seconds (JVM running for 12.269)
+2019-11-21 18:20:51,323 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 1872 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:20:51,331 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:20:51,331 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:20:56,149 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:21:01,882 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 11.183 seconds (JVM running for 11.99)
+2019-11-21 18:32:27,596 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 25168 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:32:27,604 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:32:27,604 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:32:32,318 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:32:37,895 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.9 seconds (JVM running for 11.695)
+2019-11-21 18:37:08,119 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 25052 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:37:08,128 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:37:08,128 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:37:12,585 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:37:18,217 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.76 seconds (JVM running for 11.561)
+2019-11-21 18:37:24,212 ERROR (OtapackageJersey.java:140)- java.lang.NullPointerException
+	at snod.com.cn.service.OtaPackageService.queryOtaPackage(OtaPackageService.java:76)
+	at snod.com.cn.controller.OtapackageJersey.getPackageInfoPost(OtapackageJersey.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:76)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$$Lambda$1559/1514578787.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:148)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:191)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:243)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:103)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:493)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:415)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:104)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:277)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:370)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:389)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:342)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:229)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-11-21 18:38:02,000 ERROR (OtapackageJersey.java:140)- java.lang.NullPointerException
+	at snod.com.cn.service.OtaPackageService.queryOtaPackage(OtaPackageService.java:76)
+	at snod.com.cn.controller.OtapackageJersey.getPackageInfoPost(OtapackageJersey.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:76)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$$Lambda$1559/1514578787.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:148)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:191)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:243)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:103)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:493)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:415)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:104)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:277)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:370)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:389)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:342)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:229)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-11-21 18:41:47,559 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 25536 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:41:47,567 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:41:47,568 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:41:52,123 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:41:57,424 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 10.483 seconds (JVM running for 11.266)
+2019-11-21 18:42:13,378 ERROR (OtapackageJersey.java:141)- java.lang.NullPointerException
+	at snod.com.cn.service.OtaPackageService.queryOtaPackage(OtaPackageService.java:76)
+	at snod.com.cn.controller.OtapackageJersey.getPackageInfoPost(OtapackageJersey.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:76)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$$Lambda$1559/416509967.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:148)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:191)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:243)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:103)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:493)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:415)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:104)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:277)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:370)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:389)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:342)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:229)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-11-21 18:51:36,780 INFO (StartupInfoLogger.java:50)- Starting ApiApplication on N9E7I63DAFWHTOH with PID 21180 (D:\workspace_log\Log_Platform\Log_Api\target\classes started by Administrator in D:\workspace_log\Log_Platform\Log_Api)
+2019-11-21 18:51:36,786 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:51:36,787 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2019-11-21 18:51:41,302 INFO (ElasticsearchConfig.java:65)- Elasticsearch初始化开始。。。。。
+2019-11-21 18:51:47,122 INFO (StartupInfoLogger.java:59)- Started ApiApplication in 11.006 seconds (JVM running for 11.809)
+2019-11-21 18:52:02,873 INFO (ElasticsearchUtil.java:290)- 
+{"from":0,"size":1,"query":{"bool":{"must":[{"match":{"sn":{"query":"1122232425268812","operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions":true,"lenient":false,"zero_terms_query":"NONE","auto_generate_synonyms_phrase_query":true,"boost":1.0}}},{"range":{"createTime":{"from":null,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"explain":true,"sort":[{"createTime":{"order":"desc"}}]}
+2019-11-21 18:52:02,942 DEBUG (ElasticsearchUtil.java:298)- 共查询到[3]条数据,处理数据条数[1]
